@@ -1,0 +1,133 @@
+<html lang="fr">
+    <head>
+        <title>Callum Evans</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="js/js.js"></script>
+        <script src="js/jq.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="css/style.css" rel='stylesheet' type='text/css'/>
+        <script>
+            // Green = [125, 169, 130]
+            // Blue = [55, 80, 92]
+            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
+            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
+            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
+            
+            const doTransition = true;
+            // Initial background RGB values
+            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial accent RGB values
+            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial second accent RGB values
+            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+        </script>
+    </head>
+    <body>
+        <div class="homescreen-div" id="projects-homescreen">
+            <table class="menu-table"><tbody>
+                <tr>
+                    <td class="menu-link"><a href='index-fr.html' hreflang="fr">Page d'acceuil</a></td>
+                    <td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contact</a></td>
+                    <td class="menu-link"><a href='projects.html' hreflang="en">Anglais</a></td>
+                </tr>
+            </tbody></table>
+            <p class="homescreen-title">
+                Les projets précédents
+            </p>
+        </div>
+        <div class="content-div">
+            <div class="content-inner-div">
+                <p class="content-txt">
+                    Mes principaux intérêts de recherche se concentrent sur la combinaison des sciences urbaines et l’informatique,
+                    particulièrement l’impact environnemental de nos villes, mais je suis aussi intéressé par des autres domaines
+                    comme les applications de l’informatique inspiré par la nature, l’apprentissage machine et le développement Web.
+                    Mon profil sur GitHub est accessible <a href="https://github.com/stebey"><i><u>here</u></i></a> et il va étendre
+                    alors que je développe plus de projets aux côtés de mon master, mais un contour de quelques projets plus
+                    récents est au dessous.
+                </p>
+            </div>
+            <div class="project-parent">
+                <div class="project-tile top">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="img/chevron.svg" id="project1btn"></a></div>
+                    <div class="collapse project-body" id="project1body">
+                        <p class="project-descr">
+                            Pour le grand projet en dernière année à Exeter, en ce moment je recherche le découpage électoral et le ‘gerrymandering,’
+                            qui est le processus de la création des frontières électorales pour l’avantage d’un certain parti politique. Je vais
+                            le faire avec des techniques de l’apprentissage machine et de science des données pour créer un programme pour produire
+                            ces frontières. Le projet va aussi rechercher comment ce genre d’algorithmes peut être appliqué aux systèmes parlementaires
+                            ou multi-partis et il se terminera fin avril 2022.
+                        </p>
+                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project1"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="img/chevron.svg" id="project2btn"></a></div>
+                    <div class="collapse project-body" id="project2body">
+                        <p class="project-descr">
+                            This is my most recent project and is looking at applying ant colony optimisation techniques to a 2D ant colony simulation.
+                            The project aims to research swarm intelligence and works by simulating ants moving around a board, looking for randomly
+                            placed food, with their movements influenced by pheromones laid by other ants. Over time, the movements of the colony
+                            should converge to optimal paths between their home and food.    
+                        </p>
+                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project2"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="img/chevron.svg" id="project3btn"></a></div>
+                    <div class="collapse project-body" id="project3body">
+                        <p class="project-descr">
+                            This is my largest completed project to date and was done for my 3rd-year dissertation. The project consisted of
+                            creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
+                            the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
+                            to even non-experts, in this case showing how traffic affects emissions. The completed project can be seen on
+                            <a href="https://github.com/stebey/mdt_project"><u><i> GitHub</i></u></a> or at
+                            <a href="http://manchester-dt.co.uk/"><u><i>manchester-dt.co.uk</i></u></a>.
+                        </p>
+                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="img/chevron.svg" id="project4btn"></a></div>
+                    <div class="collapse project-body" id="project4body">
+                        <p class="project-descr">
+                            Throughout my time at Exeter, I have also completed many other smaller web development projects, in and outside
+                            of my course. For example, I created a basic site for my family’s small rental home, and in 2nd year, I played a
+                            large role in the design and branding of a group software development project as pictured below. The brief was
+                            to create an interactive treasure hunt centred around the university, and our group decided to make it into a
+                            story-based web app called ‘Hunt Dayo.’
+                        </p>
+                        <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="project4"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-div" id="popup" style="display: none;">
+            <div class="popup-parent">
+                <div class="popup-tile"><div class="resizeable-outer-div" id="popup-outer"><div class="resizeable-inner-div" id="popup-inner"></div></div></div>
+                <div class="popup-tile"><button id="popup-hide" onclick="togglePopup('hide')"><img src="img/hide-cream.svg"></button><p id="popup-txt">Not found</p></div>
+            </div>
+        </div>
+        <div style="height: 20px; width: 100%;"></div>
+        <div class="contact-div" style="display: none;" id="contact-form">
+            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="img/hide-red.svg"></button>
+            <form class="contact-form" action="/message.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Nom"><br>
+                <input type="email" id="email" name="email" placeholder="Adresse Email"><br>
+                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
+                <input type="hidden" id="redirectTo" name="redirectTo" value="projects-fr.html">
+                <input type="hidden" id="lang" name="lang" value="fr">
+                <input type="submit" value="Soumettre">
+            </form>
+        </div>
+    </body>
+</html>

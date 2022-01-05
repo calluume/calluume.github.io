@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <title>Callum Evans</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="js/js.js"></script>
+        <link href="css/style.css" rel='stylesheet' type='text/css'/>
+        <script>
+            // Green = [125, 169, 130]
+            // Blue = [55, 80, 92]
+            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
+            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
+            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
+            
+            const doTransition = true;
+            // Initial background RGB values
+            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial accent RGB values
+            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial second accent RGB values
+            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+        </script>
+    </head>
+    <body>
+        <div class="homescreen-div">
+            <table class="menu-table"><tbody>
+                <tr>
+                    <td class="menu-link"><a href='projects.html' hreflang="en">Projects</a></td>
+                    <!--<td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contact</a></td>
+                    <td class="menu-link"><a href='index-fr.html' hreflang="fr">Français</a></td>-->
+                </tr>
+            </tbody></table>
+            <p class="homescreen-title">
+                <b>Callum Evans</b><br>Computer Science student
+            </p>
+        </div>
+        <div class="content-div">
+            <div class="content-inner-div">
+                
+                <p class="content-txt">
+                    I am currently in the 4th and final year of my MSci in Computer Science at the University of Exeter and plan
+                    on continuing my studies in 2022 with a PhD, hopefully in France. Throughout my time at university, I have gained
+                    experience in many different fields within Computer Science, such as software development, artificial intelligence
+                    and machine learning, but I’m mainly interested in urban informatics and its applications within environmental science.
+                    </p><p class="content-txt">
+                    This began in my second year, when I had the opportunity to research the analysis of spatial data with a literature
+                    review surrounding the concentration of crime in cities, where I learned a great deal about data analysis methods.
+                    Then, as I became even more interested in urban science, I chose to create an urban digital twin for my 3rd-year
+                    dissertation, with a focus on traffic and emissions simulations. The project had the main goal of showing how
+                    digital twins and data visualisation can be incredibly useful in conveying complex and data-rich problems, like
+                    climate change to even non-experts and did well towards this. The project and the final report can be found on
+                    <a href="https://github.com/stebey/mdt_project"><u><i> GitHub</i></u></a>, although it can also be accessed online at
+                    <a href="http://manchester-dt.co.uk/"><u><i>manchester-dt.co.uk</i></u></a>.
+                </p>
+            </div>
+        </div>
+        <div class="resizeable-outer-div" id="callum-outer"><div class="resizeable-inner-div" id="callum-inner"></div></div>
+        <div class="content-div">
+            <div class="content-inner-div">
+                
+                <p class="content-txt">
+                    The Manchester digital twin project and the internship I did under the EPSRC vacation internship scheme hugely reaffirmed
+                    my interest in further studying the combination of computer science and urban science at a PhD level. So, for my final
+                    year project at Exeter, I decided I wanted to look at other elements of the field and research gerrymandering and the
+                    ways machine learning can be used to draw electoral boundaries. All my main projects can be found in more detail here.
+                </p>
+            </div>
+        </div>
+        <div class="content-div">
+            <table class="experience-table"><tbody>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Research Intern</b><br><i>University of Exeter<br>July - September 2021</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Research Intern</b><br><i>University of Exeter<br>July - September 2021</i><br><br></span>
+                        In the summer of 2021, I helped with an ongoing project into nature-inspired approaches to electric vehicle transportation
+                        under the EPSRC vacation internship scheme. The goal of the project was to use multi-objective optimisation techniques
+                        to find the best way to completely transition Exeter’s bus network to use electric vehicles, with my part being to look
+                        at how the model could be expanded. I was able to research a lot into the problem itself and learned a great deal about
+                        public transportation planning and nature-inspired algorithms, as well as gain some valuable experience in PhD research.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>IT Technician</b><br><i>Chapel-en-le-Frith High School<br>July - September 2019</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>IT Technician</b><br><i>Chapel-en-le-Frith High School<br>July - September 2019</i><br><br></span>
+                        I worked alongside the network manager of the school in upgrading and servicing all of their computers over the course of
+                        the summer, as well as helping to fix any other technical issues that came up. This greatly helped my technical knowledge
+                        of computer hardware, but I was also able to get a better understanding of how larger organisations function on a technical
+                        level.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Web Developer</b><br><i>IT Telemarketing Services<br>June - July 2019</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Web Developer</b><br><i>IT Telemarketing Services<br>June - July 2019</i><br><br></span>
+                        I took a large role in fixing and redesigning elements of the company’s website before the launch of a new service, as well as 
+                        creating some additional branding to be used by other employees. I also created and sent out e-communications for various
+                        clients, helping my ability to deliver the highest quality and service I could whilst following their specifications. Although
+                        this also generally gave me a lot more confidence in my web development and graphic design skills.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - Present</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - Present</i><br><br></span>
+                        Outside of my interests within Computer Science, I am also a fully qualified sailing instructor and have been helping to
+                        run training at my local reservoir, and competing in national competitions, for many years. I also became the club’s junior
+                        coordinator for some time, helping to organise extra social events for younger members as well as helping with some of
+                        the administrative elements of training. This has all greatly helped my ability to adapt and plan under pressure, and I
+                        continue to take part in the club when I am not at university.
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="contact-div" style="display: none;" id="contact-form">
+            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="img/hide-red.svg"></button>
+            <form class="contact-form" action="/message.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Name"><br>
+                <input type="email" id="email" name="email" placeholder="Email Address"><br>
+                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
+                <input type="hidden" id="redirectTo" name="redirectTo" value="index.html">
+                <input type="hidden" id="lang" name="lang" value="en">
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

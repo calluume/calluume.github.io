@@ -1,0 +1,395 @@
+:root {
+    --main-bg: rgb(244, 241, 222);
+    --main-accent: rgb(224, 122, 95);
+    --second-accent-eng: rgb(125, 169, 130);
+    --second-accent-fr: rgb(55, 80, 92);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Newsreader', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--main-accent);
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .homescreen-div {
+        height: 70% !important;
+    }
+    .homescreen-title {
+        font-size: 2.5em !important;
+        bottom: 10% !important;
+        margin: 0 15% !important;
+    }
+    .menu-table {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+    .content-inner-div {
+        margin: 0 40px !important;
+    }
+    #callum-outer {
+        margin: 35px 40px !important;
+        height: 40vh !important;
+        width: auto !important;
+    }
+    .experience-table {
+        margin: 0 40px !important;
+    }
+    .experience-descr {
+        border-bottom: solid 1px var(--main-accent) ;
+        padding-bottom: 20px;
+    }
+    .project-parent {
+        margin: 60px 40px !important;
+        width: auto !important;
+    }
+    .project-descr {
+        margin-bottom: 20px !important;
+    }
+
+    .project-img {
+        width: 100% !important;
+        height: 220px !important;
+        margin: 20px 0 !important;
+    }
+    .project-title {
+        font-size: 1.8em !important;
+        width: 80% !important;
+    }
+
+    .contact-form {
+        width: 70% !important;
+    }
+
+    .hide600 {
+        display: none !important;
+    }
+    .show600 {
+        display: inline !important;
+    }
+}
+
+.show600 {
+    display: none;
+}
+
+a {
+    transition: 0.2s;
+}
+
+.menu-table {
+    position: absolute;
+    border-collapse: unset;
+    top: 10px;
+    left: calc(20% - 20px);
+    font-size: 14pt;
+    border-spacing: 20px;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.homescreen-div {
+    height: 85%;
+    position: relative;
+}
+
+.homescreen-title {
+    position: absolute;
+    font-size: 3em;
+    bottom: 20%;
+    font-weight: 400;
+    margin: 0 20%;
+}
+.content-div {
+    width: 100%;
+}
+.content-inner-div {
+    margin: 0 20%;
+
+}
+.content-title {
+    font-size: 1.5em;
+    text-align: center;
+}
+.content-txt {
+    font-size: 14pt;
+    font-weight: 300;
+}
+.experience-div {
+    width: 100%;
+}
+.experience-table {
+    margin: 0 20%;
+    font-size: 1.2em;
+    -webkit-border-vertical-spacing: 40px;
+}
+.experience-row {
+    width: 100%;
+    margin: 0 20px;
+}
+.experience-title {
+    width: 40%;
+    line-height: 1.4;
+}
+.experience-descr {
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.contact-div {
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--main-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#callum-outer {
+    width: 50%;
+    height: 350px;
+    margin: 35px 25%;
+}
+#callum-inner {
+    background-image: url('/img/callum.jpg');
+}
+
+.resizeable-outer-div {
+    overflow: hidden;
+}
+
+.resizeable-inner-div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    place-items: center;
+}
+
+.project-parent {
+    width: 60%;
+    margin: 60px 20%;
+}
+
+.project-tile {
+    width: 100%;
+    border-bottom: solid 1px var(--main-accent);
+}
+
+.top {
+    border-top: solid 1px var(--main-accent);
+}
+
+.project-title {
+    margin: 20px 0;
+    font-size: 1.9em;
+    font-weight: 400;
+}
+.project-hdr {
+    position: relative;
+    cursor: pointer;
+}
+.project-hdr:hover {
+    opacity: 0.8;
+}
+
+
+
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+.project-btn {
+    position: absolute;
+    height: 25px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.project-img {
+    height: 250px;
+    margin: 20px 15%;
+    width: 70%;
+}
+
+.project-descr {
+    font-size: 14pt;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+#project1 {
+    position: relative;
+    background-image: url('/img/gerry.png');
+}
+#project2 {
+    position: relative;
+    background-image: url('/img/aco.png');
+}
+#project3 {
+    position: relative;
+    background-image: url('/img/mdt.png');
+}
+#project4 {
+    position: relative;
+    background-image: url('/img/tawelfa.png');
+}
+
+.popup-div {
+    background-color: var(--main-bg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+}
+
+.popup-parent {
+    width: 70%;
+    margin: 10vh 15%;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.popup-tile {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    transition: 0.2s;
+}
+
+#popup-outer {
+    height: 100%;
+    width: 100%;
+}
+
+#popup-inner {
+    background-image: url('/img/gerry.png');
+}
+
+.slideIn {
+    animation: slideIn 1s;
+}
+
+.slideOut {
+    animation: slideOut 1s;
+}
+
+@keyframes slideIn {
+    0% {transform: translateY(100%); opacity: 0}
+    100% {transform: translateY(0%); opacity: 1}
+}
+
+@keyframes slideOut {
+    0% {transform: translateY(0%); opacity: 1}
+    100% {transform: translateY(100%); opacity: 0}
+}
+
+#popup-hide {
+    background: none;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    right: 10%;
+    top: 10%;
+}
+
+#popup-hide:hover {
+    opacity: 0.5;
+}
+
+#popup-hide img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+a:hover {
+    opacity: 0.8;
+}
+
+.contact-form {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input {
+    font-family: 'Helvetica', sans-serif;
+    border: none;
+    margin: 10px 0;
+    background-color: white;
+    border: solid 1px #EFEFEF;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+}
+input[type=submit] {
+    padding: 10px 40px;
+    background-color: var(--main-accent);
+    border: none;
+    color: var(--main-bg);
+    cursor: pointer;
+    transition: 0.2s;
+}
+input[type=submit]:hover {
+    transform: scale(0.98)
+}
+
+textarea {
+    font-family: 'Helvetica', sans-serif;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    margin: 10px 0;
+    background-color: white;
+    border: solid 1px #EFEFEF;
+}
+
+.message-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.message-title {
+    font-size: 2em;
+    margin: 0 0 20px;
+}
+.message {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}

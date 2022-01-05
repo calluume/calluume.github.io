@@ -1,0 +1,135 @@
+<html lang="fr">
+    <head>
+        <title>Callum Evans</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="js/js.js"></script>
+        <link href="css/style.css" rel='stylesheet' type='text/css'/>
+        <script>
+            // Green = [125, 169, 130]
+            // Blue = [55, 80, 92]
+            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
+            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
+            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
+            
+            const doTransition = true;
+            // Initial background RGB values
+            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial accent RGB values
+            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+            // Initial second accent RGB values
+            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
+        </script>
+    </head>
+    <body>
+        <div class="homescreen-div">
+            <table class="menu-table"><tbody>
+                <tr>
+                    <td class="menu-link"><a href='projects-fr.html' hreflang="fr">Projets</a></td>
+                    <td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contacter</a></td>
+                    <td class="menu-link"><a href='index.html' hreflang="en">Anglais</a></td>
+                </tr>
+            </tbody></table>
+            <p class="homescreen-title">
+                <b>Callum Evans</b><br>Étudiant en informatique
+            </p>
+        </div>
+        <div class="content-div">
+            <div class="content-inner-div">
+                
+                <p class="content-txt">
+                    En ce moment, je suis en quatrième et dernière année de MSci en informatique à l'université d'Exeter et je prévois
+                    de continuer mes études en 2022 avec un doctorat, je l'espère en France. Pendant mon temps à l'université, j'ai
+                    gagné plus d'expérience dans plusieurs domaines différents d'informatique, comme le développement de logiciels,
+                    l'intelligence artificielle et l'apprentissage machine. Cependant je m'intéresse principalement à l'informatique
+                    urbaine et à ses applications en sciences de l'environnement.
+                    </p><p class="content-txt">
+                    Cela a commencé en deuxième année, quand j'avais l'opportunité à chercher l'analyse des données spatiales avec
+                    un analyse documentaire sur la concentration de la criminalité dans les villes, où j'ai appris beaucoup de
+                    méthodes d'analyse. Puis, en devenant plus intéressé par les sciences urbaines, j'ai choisi de créer un 'urban
+                    digital twin' urbain pour mon grand project en troisième année qui se concentrait sur la simulation de la circulation
+                    et des émissions. Le projet avait le but principal de montrer comment les 'digital twins' et la visualisation des
+                    données peuvent être très utiles pour communiquer les problèmes assez complex, comme le changement climatique, même
+                    aux non-experts, et était un succès. Le projet et le rapport final peuvent être trouvé sur
+                    <a href="https://github.com/stebey/mdt_project"><u><i> GitHub</i></u></a>, mais le système est aussi accessible sur
+                    <a href="http://manchester-dt.co.uk/"><u><i>manchester-dt.co.uk</i></u></a>.
+                </p>
+            </div>
+        </div>
+        <div class="resizeable-outer-div" id="callum-outer"><div class="resizeable-inner-div" id="callum-inner"></div></div>
+        <div class="content-div">
+            <div class="content-inner-div">
+                
+                <p class="content-txt">
+                    Le 'Manchester digital twin' projet et le stage que j'ai achevé avec l'EPSRC 'vacation internship scheme' ont vraiment
+                    réaffirmés mon intérêt à approfondir l'étude de la combinaison de l'informatique et les sciences urbaines au niveau du
+                    doctorat. Alors, pour le projet en dernière année à Exeter, j'ai décidé que je voulais chercher les autres éléments de
+                    la domaine et chercher le découpage électoral et les façons avec laquelle on peut utiliser l'apprentissage machine
+                    pour créer les frontières électorales. Tous mes projets récents sont accessible avec plus de détail
+                    <a href="projects-fr.php" hreflang="en"><u><i>ici</i></u></a>.
+                </p>
+            </div>
+        </div>
+        <div class="content-div">
+            <table class="experience-table"><tbody>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Stagiaire de Recherche</b><br><i>L'université d'Exeter<br>Juillet à septembre 2021</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Stagiaire de Recherche</b><br><i>L'université d'Exeter<br>Juillet à septembre 2021</i><br><br></span>
+                        À l'été 2021, j'ai aidé avec un projet en cours sur les approches inspirées par la nature à le transport en véhicule électrique
+                        avec l’EPSRC ‘vacation internship scheme.’ Le but du projet était utiliser les techniques d’optimisation multi-objectifs pour
+                        trouver la meilleur façon de transformer le réseau de bus d’Exeter aux véhicules électriques, tandis que ma part était de
+                        chercher comment on pouvait étendre le modèle. J'ai pu faire beaucoup de recherches sur le problème lui-même et j’ai appris
+                        beaucoup de la planification des transports en commun et les algorithmes inspirés par la nature, et j’ai aussi gagné d’expérience
+                        précieuse de la recherche doctorale.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Technicien Informatique</b><br><i>Chapel-en-le-Frith High School<br>Juillet à septembre 2019</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Technicien Informatique</b><br><i>Chapel-en-le-Frith High School<br>Juillet à septembre 2019</i><br><br></span>
+                        J’ai travaillé aux côtés du responsable du réseau du lycée dans la mise à niveau et la révision de leurs ordinateurs au cours de
+                        l’été, et j’ai aussi aidé de résoudre les autres problèmes techniques. Cela a vraiment amélioré mes connaissances techniques du
+                        matériel informatique, mais j’ai aussi pu mieux comprendre comment les grandes organisations marchent à un niveau technique.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Développeur Web</b><br><i>IT Telemarketing Services<br>Juin à juillet 2019</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Développeur Web</b><br><i>IT Telemarketing Services<br>Juin à juillet 2019</i><br><br></span>
+                        J’ai joué un grand rôle dans la réparation et la refonte des éléments du site de la compagnie avant  le lancement d’un nouveau
+                        service, de plus j’ai fait des brandings supplémentaires pour les autres employés. J’ai aussi créé et envoyé des communications
+                        électroniques pour les clients variés, ce qui a aidé ma capacité d’offrir la meilleure qualité possible en suivant leur spécification.
+                        Cependant, ça m'a généralement donné beaucoup plus de confiance en mes compétences en développement Web et en conception graphique.
+                    </td>
+                </tr>
+                <tr class="experience-row">
+                    <td class="experience-title hide600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 jusqu’à présent</i></td>
+                    <td class="experience-descr">
+                        <span class="show600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 jusqu’à présent</i><br><br></span>
+                        En dehors de mes intérêts en informatique, je suis aussi moniteur de voile diplômé et j’aide de diriger la formation junior
+                        dans mon lac artificiel local, et je participe à des compétitions nationales depuis des années. J’était aussi le ‘junior coordinator’
+                        du club, et j’ai aider d’organiser des événements sociaux supplémentaires pour les plus jeunes membres et avec les éléments
+                        administratif de la formation. Tout ceci a vraiment amélioré ma capacité de m’adapter et planifier sous pression, et je continue
+                        de contribuer au club quand je ne suis pas à l’université.
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="contact-div" style="display: none;" id="contact-form">
+            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="img/hide-red.svg"></button>
+            <form class="contact-form" action="/message.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Nom"><br>
+                <input type="email" id="email" name="email" placeholder="Adresse Email"><br>
+                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
+                <input type="hidden" id="redirectTo" name="redirectTo" value="index-fr.html">
+                <input type="hidden" id="lang" name="lang" value="fr">
+                <input type="submit" value="Soumettre">
+            </form>
+        </div>
+    </body>
+</html>
