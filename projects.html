@@ -20,7 +20,10 @@
             accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
             second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
             
-            const doTransition = true;
+            document.documentElement.style.setProperty('--main-bg', `rgb(125, 169, 130)`);
+            document.documentElement.style.setProperty('--main-accent', `rgb(244, 241, 222)`);
+
+            const doTransition = false;
             // Initial background RGB values
             const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
             // Initial accent RGB values

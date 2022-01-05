@@ -36,15 +36,6 @@ function slideToggle(id, disableScroll) {
     }
 }
 
-
-
-  
-  
-
-
-
-
-
 window.onscroll = function() {
     if (doTransition) {
         const speed = 150;
