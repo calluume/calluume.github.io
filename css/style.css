@@ -165,7 +165,7 @@ a {
     margin: 35px 25%;
 }
 #callum-inner {
-    background-image: url('/img/callum.jpg');
+    background-image: url('/images/callum.jpg');
 }
 
 .resizeable-outer-div {
@@ -240,19 +240,19 @@ a:hover {
 
 #project1 {
     position: relative;
-    background-image: url('/img/gerry.png');
+    background-image: url('/images/gerry.png');
 }
 #project2 {
     position: relative;
-    background-image: url('/img/aco.png');
+    background-image: url('/images/aco.png');
 }
 #project3 {
     position: relative;
-    background-image: url('/img/mdt.png');
+    background-image: url('/images/mdt.png');
 }
 #project4 {
     position: relative;
-    background-image: url('/img/tawelfa.png');
+    background-image: url('/images/tawelfa.png');
 }
 
 .popup-div {
@@ -286,7 +286,7 @@ a:hover {
 }
 
 #popup-inner {
-    background-image: url('/img/gerry.png');
+    background-image: url('/images/gerry.png');
 }
 
 .slideIn {

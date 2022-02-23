@@ -2,7 +2,7 @@
     <head>
         <title>Callum Evans</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="img/icon.png">
+        <link rel="icon" href="images/icon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -20,7 +20,10 @@
             accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
             second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
             
-            const doTransition = true;
+            document.documentElement.style.setProperty('--main-bg', `rgb(125, 169, 130)`);
+            document.documentElement.style.setProperty('--main-accent', `rgb(244, 241, 222)`);
+
+            const doTransition = false;
             // Initial background RGB values
             const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
             // Initial accent RGB values
@@ -34,8 +37,8 @@
             <table class="menu-table"><tbody>
                 <tr>
                     <td class="menu-link"><a href='index-fr.html' hreflang="fr">Page d'acceuil</a></td>
-                    <td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contact</a></td>
-                    <td class="menu-link"><a href='projects.html' hreflang="en">Anglais</a></td>
+                    <td class="menu-link"><a href="mailto:callumdoneevans@gmail.com">Contacter</a></td>
+                    <td class="menu-link"><a href='projects.html' hreflang="en">English</a></td>
                 </tr>
             </tbody></table>
             <p class="homescreen-title">
@@ -45,66 +48,63 @@
         <div class="content-div">
             <div class="content-inner-div">
                 <p class="content-txt">
-                    Mes principaux intérêts de recherche se concentrent sur la combinaison des sciences urbaines et l’informatique,
-                    particulièrement l’impact environnemental de nos villes, mais je suis aussi intéressé par des autres domaines
-                    comme les applications de l’informatique inspiré par la nature, l’apprentissage machine et le développement Web.
-                    Mon profil sur GitHub est accessible <a href="https://github.com/stebey"><i><u>here</u></i></a> et il va étendre
-                    alors que je développe plus de projets aux côtés de mon master, mais un contour de quelques projets plus
-                    récents est au dessous.
+                    Mes principaux intérêts de recherche se concentrent sur la combinaison des sciences urbaines et l'informatique,
+                    particulièrement avec l'impact environnemental des villes. Cependant, je m'intéresse aussi aux autres domaines
+                    comme les applications de l'informatique inspirées par la nature, le Machine Learning et le développement Web.
+                    Mon profil sur GitHub peut être accédé <a href="https://github.com/stebey"><i><u>ici</u></i></a> et étendrai
+                    alors que je développe plus de projets aux côtés de ma maîtrise, mais il y a un contour de quelques-un de mes
+                    projets plus récents au-dessous.
                 </p>
             </div>
             <div class="project-parent">
                 <div class="project-tile top">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="img/chevron.svg" id="project1btn"></a></div>
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></a></div>
                     <div class="collapse project-body" id="project1body">
                         <p class="project-descr">
-                            Pour le grand projet en dernière année à Exeter, en ce moment je recherche le découpage électoral et le ‘gerrymandering,’
-                            qui est le processus de la création des frontières électorales pour l’avantage d’un certain parti politique. Je vais
-                            le faire avec des techniques de l’apprentissage machine et de science des données pour créer un programme pour produire
-                            ces frontières. Le projet va aussi rechercher comment ce genre d’algorithmes peut être appliqué aux systèmes parlementaires
-                            ou multi-partis et il se terminera fin avril 2022.
+                            Maintenant, pour le grand projet dans ma dernière année à Exeter, je crée une nouvelle méthode pour le découpage électoral
+                            qui utilise le renforcement de l'apprentissage pour décider les frontières électorales et optimiser les solutions pour l'équité.
+                            Ceci sera appliqué au Royaume-Uni et il utiliserai des comparaisons entre la part de vote et le nombre de sièges attribués à
+                            chaque partie pour trouver les frontières qui peuvent représenter le plus précisément et équitablement l'électorat.
                         </p>
                         <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project1"></div></div>
                     </div>
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="img/chevron.svg" id="project2btn"></a></div>
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></a></div>
                     <div class="collapse project-body" id="project2body">
                         <p class="project-descr">
-                            This is my most recent project and is looking at applying ant colony optimisation techniques to a 2D ant colony simulation.
-                            The project aims to research swarm intelligence and works by simulating ants moving around a board, looking for randomly
-                            placed food, with their movements influenced by pheromones laid by other ants. Over time, the movements of the colony
-                            should converge to optimal paths between their home and food.    
+                            Ceci est un de mes projets plus récents et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
+                            simulation 2D. Le projet vise à rechercher l'intelligence d'essaim et marche par la simulation des fourmis sur un tableau, qui
+                            cherche la nourriture réparties au hasard, avec leurs mouvements influencés par les phéromones des autres fourmis. Au fil du
+                            temps, les mouvements des fourmis devraient converger vers un chemin optimal entre la colonie et la nourriture.
                         </p>
                         <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project2"></div></div>
                     </div>
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="img/chevron.svg" id="project3btn"></a></div>
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
                     <div class="collapse project-body" id="project3body">
                         <p class="project-descr">
-                            This is my largest completed project to date and was done for my 3rd-year dissertation. The project consisted of
-                            creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
-                            the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
-                            to even non-experts, in this case showing how traffic affects emissions. The completed project can be seen on
-                            <a href="https://github.com/stebey/mdt_project"><u><i> GitHub</i></u></a> or at
-                            <a href="http://manchester-dt.co.uk/"><u><i>manchester-dt.co.uk</i></u></a>.
+                            Ce projet est le plus grand que j'ai achevé et était développé pour le grand projet de ma troisième année. Tout au long du projet,
+                            j'ai essayé de créer un ‘digital twin' du centre de Manchester, en concentrant sur la simulation de la circulation et ses émissions.
+                            Le but principal était de montrer comment les ‘digital twins' pourrait être utilisés pour communiquer les problèmes et les systèmes
+                            complexes où il y a abondance de données à tout le monde, même aux non-experts. Le projet, le code source et le rapport final
+                            peuvent être trouvés sur <a href="https://github.com/stebey/mdt_project"><u><i> GitHub</i></u></a>.
                         </p>
                         <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
                     </div>
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="img/chevron.svg" id="project4btn"></a></div>
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></a></div>
                     <div class="collapse project-body" id="project4body">
                         <p class="project-descr">
-                            Throughout my time at Exeter, I have also completed many other smaller web development projects, in and outside
-                            of my course. For example, I created a basic site for my family’s small rental home, and in 2nd year, I played a
-                            large role in the design and branding of a group software development project as pictured below. The brief was
-                            to create an interactive treasure hunt centred around the university, and our group decided to make it into a
-                            story-based web app called ‘Hunt Dayo.’
+                        Tout au long de mon séjour à Exeter, j'ai aussi achevé d'autres projets de développement Web plus petits, à part mes études et aux côtés.
+                        Par exemple, j'ai créé un site simple pour le gîte de ma famille, et dans ma deuxième année, j'ai joué un grand rôle dans le design et l'image
+                        de marque d'un projet de développement logiciel du groupe. Le brief était de créer une application de chasse au trésor interactif qui se
+                        concentrait sur l'université, et notre groupe a décidé de faire une application web basée sur une histoire qui s'appelait ‘Hunt Dayo.'
                         </p>
                         <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="project4"></div></div>
                     </div>
@@ -114,12 +114,12 @@
         <div class="popup-div" id="popup" style="display: none;">
             <div class="popup-parent">
                 <div class="popup-tile"><div class="resizeable-outer-div" id="popup-outer"><div class="resizeable-inner-div" id="popup-inner"></div></div></div>
-                <div class="popup-tile"><button id="popup-hide" onclick="togglePopup('hide')"><img src="img/hide-cream.svg"></button><p id="popup-txt">Not found</p></div>
+                <div class="popup-tile"><button id="popup-hide" onclick="togglePopup('hide')"><img src="images/hide-cream.svg"></button><p id="popup-txt">Not found</p></div>
             </div>
         </div>
         <div style="height: 20px; width: 100%;"></div>
         <div class="contact-div" style="display: none;" id="contact-form">
-            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="img/hide-red.svg"></button>
+            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="images/hide-red.svg"></button>
             <form class="contact-form" action="/message.php" method="post">
                 <input type="text" id="name" name="name" placeholder="Nom"><br>
                 <input type="email" id="email" name="email" placeholder="Adresse Email"><br>
