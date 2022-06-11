@@ -14,22 +14,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="css/style.css" rel='stylesheet' type='text/css'/>
         <script>
-            // Green = [125, 169, 130]
-            // Blue = [55, 80, 92]
-            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
-            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
-            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
-            
             document.documentElement.style.setProperty('--main-bg', `rgb(125, 169, 130)`);
             document.documentElement.style.setProperty('--main-accent', `rgb(244, 241, 222)`);
-
-            const doTransition = false;
-            // Initial background RGB values
-            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial accent RGB values
-            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial second accent RGB values
-            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
         </script>
     </head>
     <body>
@@ -49,7 +35,7 @@
             <div class="content-inner-div">
                 <p class="content-txt">
                     Mes principaux intérêts de recherche se concentrent sur la combinaison des sciences urbaines et l'informatique,
-                    particulièrement avec l'impact environnemental des villes. Cependant, je m'intéresse aussi aux autres domaines
+                    particulièrement avec l'impact environnemental et social des villes. Cependant, je m'intéresse aussi aux autres domaines
                     comme les applications de l'informatique inspirées par la nature, le Machine Learning et le développement Web.
                     Mon profil sur GitHub peut être accédé <a href="https://github.com/calluume"><i><u>ici</u></i></a> et étendrai
                     alors que je développe plus de projets aux côtés de ma maîtrise, mais il y a un contour de quelques-un de mes
@@ -61,12 +47,33 @@
                     <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></a></div>
                     <div class="collapse project-body" id="project1body">
                         <p class="project-descr">
-                            Maintenant, pour le grand projet dans ma dernière année à Exeter, je crée une nouvelle méthode pour le découpage électoral
-                            qui utilise le renforcement de l'apprentissage pour décider les frontières électorales et optimiser les solutions pour l'équité.
-                            Ceci sera appliqué au Royaume-Uni et il utiliserai des comparaisons entre la part de vote et le nombre de sièges attribués à
-                            chaque partie pour trouver les frontières qui peuvent représenter le plus précisément et équitablement l'électorat.
+                            Pour le grand project dans ma dernière année à Exeter, j'ai développé une nouvelle méthode algorithmique pour
+                            le découpage électoral qui utilise le renforcement de l'apprentissage pour optimiser les solutions pour l'équité.
+                            Le modèle était appliqué au Royaume-Uni et il évaluait l'équité avec une nouvelle métrique, le `Seats-Votes
+                            difference,' qui peut comparer directement la part de vote de chaque partie et le nombre de sièges qui lui sont
+                            attribués pour trouver les frontières qui peuvent représenter le plus précisément et équitablement l'électorat.
+                        </p><p class="project-descr">
+                            Le project a fini en Mai 2022, après j'ai trouvé que le modèle a pu améliorer l'équité des frontières électorales
+                            dans chaque expérience réalisée. Le projet lui-même, le code source et le rapport final peuvent être trouvés sur
+                            <a href="https://github.com/calluume/UK_redistricter"><u><i>GitHub</i></u></a>.
+                            
                         </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project1"></div></div>
+                        <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="project1"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
+                    <div class="collapse project-body" id="project3body">
+                        <p class="project-descr">
+                            Ce projet est le plus grand que j'ai achevé et était développé pour le grand projet de ma troisième année. Tout au long du projet,
+                            j'ai essayé de créer un ‘digital twin' du centre de Manchester, en concentrant sur la simulation de la circulation et ses émissions.
+                            Le but principal était de montrer comment les ‘digital twins' pourrait être utilisés pour communiquer les problèmes et les systèmes
+                            complexes où il y a abondance de données à tout le monde, même aux non-experts.
+                        </p><p class="project-descr">
+                            Le code source et le rapport final peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project"><u><i>GitHub</i></u></a>.
+                        </p>
+                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
                     </div>
                 </div>
 
@@ -80,20 +87,6 @@
                             temps, les mouvements des fourmis devraient converger vers un chemin optimal entre la colonie et la nourriture.
                         </p>
                         <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project2"></div></div>
-                    </div>
-                </div>
-
-                <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
-                    <div class="collapse project-body" id="project3body">
-                        <p class="project-descr">
-                            Ce projet est le plus grand que j'ai achevé et était développé pour le grand projet de ma troisième année. Tout au long du projet,
-                            j'ai essayé de créer un ‘digital twin' du centre de Manchester, en concentrant sur la simulation de la circulation et ses émissions.
-                            Le but principal était de montrer comment les ‘digital twins' pourrait être utilisés pour communiquer les problèmes et les systèmes
-                            complexes où il y a abondance de données à tout le monde, même aux non-experts. Le projet, le code source et le rapport final
-                            peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project"><u><i> GitHub</i></u></a>.
-                        </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
                     </div>
                 </div>
 

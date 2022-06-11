@@ -35,25 +35,3 @@ function slideToggle(id, disableScroll) {
         setTimeout(function(){  element.style.display = "none"; }, 900);
     }
 }
-
-window.onscroll = function() {
-    if (doTransition) {
-        const speed = 150;
-        const delay = 0;
-
-        scrolled = (window.scrollY-delay)/speed;
-
-        if (scrolled <= 1 && scrolled >= 0) {
-            const [bgR, bgG, bgB, acR, acG, acB] = [((scR-bgSR)*scrolled)+bgSR, ((scG-bgSG)*scrolled)+bgSG, ((scB-bgSB)*scrolled)+bgSB, ((bgSR-acSR)*scrolled)+acSR, ((bgSG-acSG)*scrolled)+acSG, ((bgSB-acSB)*scrolled)+acSB].map(Math.round);
-            
-            document.documentElement.style.setProperty('--main-bg', `rgb(${bgR}, ${bgG}, ${bgB})`);
-            document.documentElement.style.setProperty('--main-accent', `rgb(${acR}, ${acG}, ${acB})`);
-        } else if (scrolled >= 1){
-            document.documentElement.style.setProperty('--main-bg', `rgb(${scR}, ${scG}, ${scB})`);
-            document.documentElement.style.setProperty('--main-accent', `rgb(${bgSR}, ${bgSG}, ${bgSB})`);
-        } else {
-            document.documentElement.style.setProperty('--main-bg', `rgb(${bgSR}, ${bgSG}, ${bgSB})`);
-            document.documentElement.style.setProperty('--main-accent', `rgb(${acSR}, ${acSG}, ${acSB})`);
-        }
-    }
-}

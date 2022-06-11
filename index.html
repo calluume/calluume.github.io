@@ -9,45 +9,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src="js/js.js"></script>
         <link href="css/style.css" rel='stylesheet' type='text/css'/>
-        <script>
-            // Green = [125, 169, 130]
-            // Blue = [55, 80, 92]
-            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
-            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
-            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
-
-            const doTransition = false;
-            // Initial background RGB values
-            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial accent RGB values
-            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial second accent RGB values
-            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-        </script>
     </head>
     <body>
         <div class="homescreen-div">
-            <table class="menu-table"><tbody>
-                <tr>
-                    <td class="menu-link"><a href='projects.html' hreflang="en">Projects</a></td>
-                    <td class="menu-link"><a href="mailto:callumdoneevans@gmail.com">Contact</a></td>
-                    <!--<td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contact</a></td>-->
-                    <td class="menu-link"><a href='index-fr.html' hreflang="fr">Français</a></td>
-                </tr>
-            </tbody></table>
+            <table class="menu-table"><tbody><tr>
+                <td class="menu-link"><a href='projects.html' hreflang="en">Projects</a></td>
+                <td class="menu-link"><a href="mailto:callumdoneevans@gmail.com">Contact</a></td>
+                <td class="menu-link"><a href='index-fr.html' hreflang="fr">Français</a></td>
+            </tr></tbody></table>
             <p class="homescreen-title">
                 <b>Callum Evans</b><br>Computer Science student
             </p>
         </div>
         <div class="content-div">
             <div class="content-inner-div">
-                
                 <p class="content-txt">
                     I am currently in the 4th and final year of my MSci in Computer Science at the University of Exeter and plan
                     on continuing my studies in 2022 with a PhD, hopefully in France. Throughout my time at university, I have gained
                     experience in many different fields within Computer Science, such as software development, artificial intelligence
                     and machine learning, however, I’m mainly interested in urban informatics and its applications within environmental science.
-                    </p><p class="content-txt">
+                </p><p class="content-txt">
                     I decided I wanted to research more into the topic when I had the opportunity to research the analysis of spatial data with a literature
                     review surrounding the concentration of crime in cities, where I learned a great deal about data analysis methods.
                     As I became even more interested in urban science, I then chose to create an urban digital twin for my 3rd-year
@@ -61,7 +42,6 @@
         <div class="resizeable-outer-div" id="callum-outer"><div class="resizeable-inner-div" id="callum-inner"></div></div>
         <div class="content-div">
             <div class="content-inner-div">
-                
                 <p class="content-txt">
                     The Manchester digital twin project and the internship I did under the EPSRC vacation internship scheme hugely reaffirmed
                     my interest in further studying the combination of computer science and urban science at a PhD level. So, for my final
@@ -75,7 +55,6 @@
             </div>
         </div>
         <div class="content-div">
-            
             <table class="experience-table"><tbody>
                 <p class="content-title" id="prev-exp"><b>Previous Experience</b></p>
                 <tr class="experience-row">
@@ -121,17 +100,6 @@
                     </td>
                 </tr>
             </tbody></table>
-        </div>
-        <div class="contact-div" style="display: none;" id="contact-form">
-            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="images/hide-red.svg"></button>
-            <form class="contact-form" action="/message.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Name"><br>
-                <input type="email" id="email" name="email" placeholder="Email Address"><br>
-                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
-                <input type="hidden" id="redirectTo" name="redirectTo" value="index.html">
-                <input type="hidden" id="lang" name="lang" value="en">
-                <input type="submit">
-            </form>
         </div>
     </body>
 </html>

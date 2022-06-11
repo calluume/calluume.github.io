@@ -85,6 +85,10 @@ a {
     transition: 0.2s;
 }
 
+.menu-link a {
+    font-weight: 300;
+}
+
 .menu-table {
     position: absolute;
     border-collapse: unset;
@@ -110,6 +114,7 @@ a {
 }
 .content-div {
     width: 100%;
+    padding-bottom: 20px;
 }
 .content-inner-div {
     margin: 0 20%;
@@ -165,7 +170,7 @@ a {
     margin: 35px 25%;
 }
 #callum-inner {
-    background-image: url('/images/callum.jpg');
+    background-image: url('https://i.imgur.com/ybXlSQV.jpg');
 }
 
 .resizeable-outer-div {
@@ -207,9 +212,6 @@ a {
     opacity: 0.8;
 }
 
-
-
-
 a:hover {
     text-decoration: none;
     color: var(--main-accent);
@@ -239,20 +241,26 @@ a:hover {
 }
 
 #project1 {
+    /* Redistricter */
     position: relative;
-    background-image: url('/images/gerry.png');
+    background-repeat: none;
+    background-size: auto 100%;
+    background-image: url('https://i.imgur.com/HplgaGI.gif');
 }
 #project2 {
+    /* ACO */
     position: relative;
-    background-image: url('/images/aco.png');
+    background-image: url('https://i.imgur.com/3AKtMr4.jpg');
 }
 #project3 {
+    /* MDT */
     position: relative;
-    background-image: url('/images/mdt.png');
+    background-image: url('https://i.imgur.com/rM5lKlj.png');
 }
 #project4 {
+    /* Hunt Dayo */
     position: relative;
-    background-image: url('/images/tawelfa.png');
+    background-image: url('https://i.imgur.com/WjmreLp.png');
 }
 
 .popup-div {
@@ -286,7 +294,7 @@ a:hover {
 }
 
 #popup-inner {
-    background-image: url('/images/gerry.png');
+    background-image: url('https://i.imgur.com/HplgaGI.gif');
 }
 
 .slideIn {

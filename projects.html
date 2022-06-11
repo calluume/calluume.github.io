@@ -14,22 +14,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="css/style.css" rel='stylesheet' type='text/css'/>
         <script>
-            // Green = [125, 169, 130]
-            // Blue = [55, 80, 92]
-            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
-            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
-            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
-            
             document.documentElement.style.setProperty('--main-bg', `rgb(125, 169, 130)`);
             document.documentElement.style.setProperty('--main-accent', `rgb(244, 241, 222)`);
-
-            const doTransition = false;
-            // Initial background RGB values
-            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial accent RGB values
-            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial second accent RGB values
-            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
         </script>
     </head>
     <body>
@@ -38,7 +24,6 @@
                 <tr>
                     <td class="menu-link"><a href='index.html'>About Me</a></td>
                     <td class="menu-link"><a href="mailto:callumdoneevans@gmail.com">Contact</a></td>
-                    <!--<td class="menu-link"><a href='#' onclick="slideToggle('contact-form', true)">Contact</a></td>-->
                     <td class="menu-link"><a href='projects-fr.html' hreflang="fr">Français</a></td>
                 </tr>
             </tbody></table>
@@ -50,7 +35,7 @@
             <div class="content-inner-div">
                 <p class="content-txt">
                     My main research interests centre around the combination of urban and Computer Science, particularly looking at the
-                    environmental impact of cities and transportation, however, I’m also interested in other fields such as nature-inspired applications
+                    social and environmental impact of cities and transportation, however, I’m also interested in other fields such as nature-inspired or applications
                     of Computer Science, machine learning and web development. My GitHub profile can be found <a href="https://github.com/calluume"><i><u>here</u></i></a> and will expand as I
                     develop more projects alongside my degree, but below is an outline of some of my more recent projects.
                 </p>
@@ -60,13 +45,32 @@
                     <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Gerrymandering research project</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></a></div>
                     <div class="collapse project-body" id="project1body">
                         <p class="project-descr">
-                            For my final year project at Exeter, I am currently developing a new reinforcement learning-based method for
-                            drawing electoral district boundaries, which will try to directly optimise boundaries for fairness.
-                            This will be applied to the UK and will use comparisons to parliamentary seat share to ensure that
-                            any proposed maps are able to most fairly and accurately represent the electorate. The project will be
-                            completed by the end of April 2022.
+                            For my final year dissertation at Exeter, I developed a new reinforcement learning-based method for drawing
+                            electoral district boundaries which aims to directly optimise boundaries for fairness. The model was applied
+                            to the UK and evaluates fairness using a new metric, the Seats-Votes difference, that is able to make direct
+                            comparisons between parties' proportional vote and seat share in order to most fairly and accurately represent
+                            the electorate.
+                        </p><p class="project-descr">
+                            The project was completed in May 2022, after the model was found to be able to improve the fairness of the UK's constituency
+                            boundaries in every experiment performed. The source code and final report can be found on
+                            <a href="https://github.com/calluume/UK_redistricter"><u><i>GitHub</i></u></a>.
                         </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project1"></div></div>
+                        <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="project1"></div></div>
+                    </div>
+                </div>
+
+                <div class="project-tile">
+                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
+                    <div class="collapse project-body" id="project3body">
+                        <p class="project-descr">
+                            This is my largest project to date and was developed for my 3rd-year dissertation. The project consisted of
+                            creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
+                            the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
+                            to even non-experts, in this case showing the effect of traffic on emissions.
+                        </p><p class="project-descr">
+                            The completed project source code and report can be seen on <a href="https://github.com/calluume/mdt_project"><u><i>GitHub</i></u></a>.
+                        </p>
+                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
                     </div>
                 </div>
 
@@ -84,20 +88,6 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
-                    <div class="collapse project-body" id="project3body">
-                        <p class="project-descr">
-                            This is my largest project to date and was developed for my 3rd-year dissertation. The project consisted of
-                            creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
-                            the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
-                            to even non-experts, in this case showing the effect of traffic on emissions. The completed project source code and report
-                            can be seen on <a href="https://github.com/calluume/mdt_project"><u><i>GitHub</i></u></a>.
-                        </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
-                    </div>
-                </div>
-
-                <div class="project-tile">
                     <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Web Development Projects</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></a></div>
                     <div class="collapse project-body" id="project4body">
                         <p class="project-descr">
@@ -111,24 +101,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="popup-div" id="popup" style="display: none;">
-            <div class="popup-parent">
-                <div class="popup-tile"><div class="resizeable-outer-div" id="popup-outer"><div class="resizeable-inner-div" id="popup-inner"></div></div></div>
-                <div class="popup-tile"><button id="popup-hide" onclick="togglePopup('hide')"><img src="images/hide-cream.svg"></button><p id="popup-txt">Not found</p></div>
-            </div>
-        </div>
-        <div style="height: 20px; width: 100%;"></div>
-        <div class="contact-div" style="display: none;" id="contact-form">
-            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="images/hide-red.svg"></button>
-            <form class="contact-form" action="/message.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Name"><br>
-                <input type="email" id="email" name="email" placeholder="Email Address"><br>
-                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
-                <input type="hidden" id="redirectTo" name="redirectTo" value="projects.html">
-                <input type="hidden" id="lang" name="lang" value="en">
-                <input type="submit">
-            </form>
         </div>
     </body>
 </html>

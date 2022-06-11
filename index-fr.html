@@ -9,21 +9,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <script src="js/js.js"></script>
         <link href="css/style.css" rel='stylesheet' type='text/css'/>
-        <script>
-            // Green = [125, 169, 130]
-            // Blue = [55, 80, 92]
-            bg = getComputedStyle(document.documentElement).getPropertyValue('--main-bg');
-            accent = getComputedStyle(document.documentElement).getPropertyValue('--main-accent');
-            second = getComputedStyle(document.documentElement).getPropertyValue('--second-accent-eng');
-            
-            const doTransition = false;
-            // Initial background RGB values
-            const [bgSR, bgSG, bgSB] = bg.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial accent RGB values
-            const [acSR, acSG, acSB] = accent.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-            // Initial second accent RGB values
-            const [scR, scG, scB] = second.slice(5, -1).split(", ").map(function (x) { return parseInt(x, 10); });
-        </script>
     </head>
     <body>
         <div class="homescreen-div">
