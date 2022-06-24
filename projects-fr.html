@@ -7,8 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <script src="js/js.js"></script>
         <script src="js/jq.js"></script>
+        <script src="js/js.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -23,8 +23,9 @@
             <table class="menu-table"><tbody>
                 <tr>
                     <td class="menu-link"><a href='index-fr.html' hreflang="fr">Page d'acceuil</a></td>
+                    <td class="menu-link"><a href="https://github.com/calluume">GitHub</a></td>
                     <td class="menu-link"><a href="mailto:callumdoneevans@gmail.com">Contacter</a></td>
-                    <td class="menu-link"><a href='projects.html' hreflang="en">English</a></td>
+                    <td class="menu-link"><a href='projects.html' id="english" hreflang="en">English</a></td>
                 </tr>
             </tbody></table>
             <p class="homescreen-title">
@@ -37,7 +38,7 @@
                     Mes principaux intérêts de recherche se concentrent sur la combinaison des sciences urbaines et l'informatique,
                     particulièrement avec l'impact environnemental et social des villes. Cependant, je m'intéresse aussi aux autres domaines
                     comme les applications de l'informatique inspirées par la nature, le Machine Learning et le développement Web.
-                    Mon profil sur GitHub peut être accédé <a href="https://github.com/calluume"><i><u>ici</u></i></a> et étendrai
+                    Mon profil sur GitHub peut être accédé <a href="https://github.com/calluume">ici</a> et étendrai
                     alors que je développe plus de projets aux côtés de ma maîtrise, mais il y a un contour de quelques-un de mes
                     projets plus récents au-dessous.
                 </p>
@@ -55,7 +56,8 @@
                         </p><p class="project-descr">
                             Le project a fini en Mai 2022, après j'ai trouvé que le modèle a pu améliorer l'équité des frontières électorales
                             dans chaque expérience réalisée. Le projet lui-même, le code source et le rapport final peuvent être trouvés sur
-                            <a href="https://github.com/calluume/UK_redistricter"><u><i>GitHub</i></u></a>.
+                            <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, avec un papier sur l'algorithme soumis maintenant
+                            pour publication en automne.
                             
                         </p>
                         <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="project1"></div></div>
@@ -66,12 +68,12 @@
                     <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
                     <div class="collapse project-body" id="project3body">
                         <p class="project-descr">
-                            Ce projet est le plus grand que j'ai achevé et était développé pour le grand projet de ma troisième année. Tout au long du projet,
-                            j'ai essayé de créer un ‘digital twin' du centre de Manchester, en concentrant sur la simulation de la circulation et ses émissions.
+                            Ce projet était développé pour le grand projet de ma troisième année prévoyait la création d'un ‘digital twin' du centre de
+                            Manchester, en concentrant sur la simulation de la circulation et ses émissions.
                             Le but principal était de montrer comment les ‘digital twins' pourrait être utilisés pour communiquer les problèmes et les systèmes
                             complexes où il y a abondance de données à tout le monde, même aux non-experts.
                         </p><p class="project-descr">
-                            Le code source et le rapport final peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project"><u><i>GitHub</i></u></a>.
+                            Le code source et le rapport final peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project">GitHub</a>.
                         </p>
                         <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
                     </div>
@@ -81,12 +83,12 @@
                     <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></a></div>
                     <div class="collapse project-body" id="project2body">
                         <p class="project-descr">
-                            Ceci est un de mes projets plus récents et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
+                            Ceci est un de mes projets plus petits et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
                             simulation 2D. Le projet vise à rechercher l'intelligence d'essaim et marche par la simulation des fourmis sur un tableau, qui
                             cherche la nourriture réparties au hasard, avec leurs mouvements influencés par les phéromones des autres fourmis. Au fil du
                             temps, les mouvements des fourmis devraient converger vers un chemin optimal entre la colonie et la nourriture.
                         </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project2"></div></div>
+                        <div class="resizeable-outer-div project-img" style="height: 400px;"><div class="resizeable-inner-div" id="project2"></div></div>
                     </div>
                 </div>
 
@@ -104,23 +106,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup-div" id="popup" style="display: none;">
-            <div class="popup-parent">
-                <div class="popup-tile"><div class="resizeable-outer-div" id="popup-outer"><div class="resizeable-inner-div" id="popup-inner"></div></div></div>
-                <div class="popup-tile"><button id="popup-hide" onclick="togglePopup('hide')"><img src="images/hide-cream.svg"></button><p id="popup-txt">Not found</p></div>
-            </div>
-        </div>
-        <div style="height: 20px; width: 100%;"></div>
-        <div class="contact-div" style="display: none;" id="contact-form">
-            <button id="popup-hide" onclick="slideToggle('contact-form', true)"><img src="images/hide-red.svg"></button>
-            <form class="contact-form" action="/message.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Nom"><br>
-                <input type="email" id="email" name="email" placeholder="Adresse Email"><br>
-                <textarea id="message" rows="8" name="message" placeholder="Message"></textarea><br>
-                <input type="hidden" id="redirectTo" name="redirectTo" value="projects-fr.html">
-                <input type="hidden" id="lang" name="lang" value="fr">
-                <input type="submit" value="Soumettre">
-            </form>
-        </div>
+        <div class="footer-div"><p>
+            Me contacter au: <a href="mailto:callumdoneevans@gmail.com">callumdoneevans@gmail.com</a><br>
+            Dernière mise à jour: <span id="last-updated"></span>
+        </p></div>
     </body>
 </html>
