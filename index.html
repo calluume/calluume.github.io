@@ -110,12 +110,3 @@
         </p></div>
     </body>
 </html>
-<script>
-    if (document.referrer !== '' || document.referrer.indexOf('callum-evans') < 0) {
-        $.get("https://ipinfo.io", function(response) {
-            if (response.country == 'FR') {
-                window.location = 'index-fr.html'
-            }
-        }, "jsonp");
-    }
-</script>
