@@ -1,8 +1,34 @@
 :root {
-    --main-bg: rgb(244, 241, 222);
-    --main-accent: rgb(224, 122, 95);
     --second-accent-eng: rgb(125, 169, 130);
     --second-accent-fr: rgb(55, 80, 92);
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('fonts/Newsreader/Newsreader-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('fonts/Newsreader/Newsreader-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('fonts/Newsreader/Newsreader-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('fonts/Newsreader/Newsreader-MediumItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
 
 body {
