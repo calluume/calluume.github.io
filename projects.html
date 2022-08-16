@@ -43,7 +43,7 @@
             </div>
             <div class="project-parent">
                 <div class="project-tile top">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Gerrymandering research project</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project1')"><h1 class="project-title">Gerrymandering research project</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></div>
                     <div class="collapse project-body" id="project1body">
                         <p class="project-descr">
                             For my final year dissertation at Exeter, I developed a new reinforcement learning-based method for drawing
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project3')"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></div>
                     <div class="collapse project-body" id="project3body">
                         <p class="project-descr">
                             The project was developed for my 3rd-year dissertation and consisted of
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Ant Colony Optimisation</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project2')"><h1 class="project-title">Ant Colony Optimisation</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></div>
                     <div class="collapse project-body" id="project2body">
                         <p class="project-descr">
                             This is one of my smaller projects and looked at applying ant colony optimisation techniques to a 2D ant colony simulation.
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Web Development Projects</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project4')"><h1 class="project-title">Web Development Projects</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></div>
                     <div class="collapse project-body" id="project4body">
                         <p class="project-descr">
                             Throughout my time at Exeter, I also completed many other smaller web development projects, in and outside
@@ -111,3 +111,19 @@
         </p></div>
     </body>
 </html>
+<script>
+    function dropDown(projectBodyID) {
+        if (document.getElementById(projectBodyID)) {
+            body = document.getElementById(projectBodyID+'body')
+            btn = document.getElementById(projectBodyID+'btn')
+
+            if (btn.style.transform == "rotate(180deg) translateY(50%)") {
+                btn.style.transform = "translateY(-50%)"
+            } else {
+                btn.style.transform = "rotate(180deg) translateY(50%)"
+            }
+
+            $('#'+projectBodyID+'body').collapse('toggle');
+        }
+    }
+</script>

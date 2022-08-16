@@ -45,7 +45,7 @@
             </div>
             <div class="project-parent">
                 <div class="project-tile top">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project1body"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project1')"><h1 class="project-title">Projet sur le Découpage Électoral</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></div>
                     <div class="collapse project-body" id="project1body">
                         <p class="project-descr">
                             Pour le grand project dans ma dernière année à Exeter, j'ai développé une nouvelle méthode algorithmique pour
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project3body"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project3')"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></div>
                     <div class="collapse project-body" id="project3body">
                         <p class="project-descr">
                             Ce projet était développé pour le grand projet de ma troisième année prévoyait la création d'un ‘digital twin' du centre de
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project2body"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project2')"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></div>
                     <div class="collapse project-body" id="project2body">
                         <p class="project-descr">
                             Ceci est un de mes projets plus petits et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="project-tile">
-                    <div class="project-hdr"><a data-toggle="collapse" data-target="#project4body"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></a></div>
+                    <div class="project-hdr" onclick="dropDown('project4')"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></div>
                     <div class="collapse project-body" id="project4body">
                         <p class="project-descr">
                         Tout au long de mon séjour à Exeter, j'ai aussi achevé d'autres projets de développement Web plus petits, à part mes études et aux côtés.
@@ -112,3 +112,19 @@
         </p></div>
     </body>
 </html>
+<script>
+    function dropDown(projectBodyID) {
+        if (document.getElementById(projectBodyID)) {
+            body = document.getElementById(projectBodyID+'body')
+            btn = document.getElementById(projectBodyID+'btn')
+
+            if (btn.style.transform == "rotate(180deg) translateY(50%)") {
+                btn.style.transform = "translateY(-50%)"
+            } else {
+                btn.style.transform = "rotate(180deg) translateY(50%)"
+            }
+
+            $('#'+projectBodyID+'body').collapse('toggle');
+        }
+    }
+</script>
