@@ -8,6 +8,7 @@ webText = {
         "menu-home": {"eng": "About Me", "fr": "Page d'acceuil"},
         "menu-projects": { "eng": "Projects", "fr": "Projets" },
         "menu-contact": { "eng": "Contact", "fr": "Contacter" },
+        "menu-publications": { "eng": "Publications", "fr": "Publications"},
         "footer-div": {
             "eng": `<p>
                         Contact me at: <a href="mailto:callumdoneevans@gmail.com">callumdoneevans@gmail.com</a><br>
@@ -175,112 +176,108 @@ webText = {
                         projets plus récents au-dessous.
                     </p>`
         },
-        "redistricter-description": {
-            "eng": `<div class="project-hdr" onclick="dropDown('project1')"><h1 class="project-title">The UK Redistricter Project</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></div>
-                    <div class="collapse project-body" id="project1body">
-                        <p class="project-descr">
-                            For my final year dissertation at Exeter, I developed a new reinforcement learning-based method for drawing
-                            electoral district boundaries which aims to directly optimise boundaries for fairness. The model was applied
-                            to the UK and evaluates fairness using a new metric, the Seats-Votes difference, that is able to make direct
-                            comparisons between parties' proportional vote and seat share in order to most fairly and accurately represent
-                            the electorate.
-                        </p><p class="project-descr">
-                            The project was completed in May 2022, after the model was found to be able to improve the fairness of the UK's constituency
-                            boundaries in every experiment performed. The source code and final report can be found on
-                            <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, with a paper on the algorithm to be published as part
-                            of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on Data Science
-                            for Social Good</a>" in Grenoble this September.
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="project1"></div></div>
-                    </div>`,
-            "fr":  `<div class="project-hdr" onclick="dropDown('project1')"><h1 class="project-title">The UK Redistricter Project</h1><img class="project-btn" src="images/chevron.svg" id="project1btn"></div>
-                    <div class="collapse project-body" id="project1body">
-                        <p class="project-descr">
-                            Pour le grand project dans ma dernière année à Exeter, j'ai développé une nouvelle méthode algorithmique pour
-                            le découpage électoral qui utilise le renforcement de l'apprentissage pour optimiser les solutions pour l'équité.
-                            Le modèle était appliqué au Royaume-Uni et il évaluait l'équité avec une nouvelle métrique, le ‘Seats-Votes
-                            difference,’ qui peut comparer directement la part de vote de chaque partie et le nombre de sièges qui lui sont
-                            attribués pour trouver les frontières qui peuvent représenter le plus précisément et équitablement l'électorat.
-                        </p><p class="project-descr">
-                            Le project a fini en Mai 2022, mais j'ai trouvé que le modèle a pu améliorer l'équité des frontières électorales
-                            dans chaque expérience réalisée. Le projet lui-même, le code source et le rapport final peuvent être trouvés sur
-                            <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, et un papier sur l'algorithme sera publié
-                            dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>
-                            Workshop on Data Science for Social Good</a>" à Grenoble en septembre.
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="project1"></div></div>
-                    </div>`
+        "redistrictertitle": { "eng": "The UK Redistricter Project", "fr": "The UK Redistricter Project"},
+        "redistricterbody": {
+            "eng": `<p class="project-descr">
+                        For my final year dissertation at Exeter, I developed a new reinforcement learning-based method for drawing
+                        electoral district boundaries which aims to directly optimise boundaries for fairness. The model was applied
+                        to the UK and evaluates fairness using a new metric, the Seats-Votes difference, that is able to make direct
+                        comparisons between parties' proportional vote and seat share in order to most fairly and accurately represent
+                        the electorate.
+                    </p><p class="project-descr">
+                        The project was completed in May 2022, after the model was found to be able to improve the fairness of the UK's constituency
+                        boundaries in every experiment performed. The source code and final report can be found on
+                        <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, with a paper on the algorithm to be published as part
+                        of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on Data Science
+                        for Social Good</a>" in Grenoble this September.
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="redistricter"></div></div>`,
+            "fr":  `<p class="project-descr">
+                        Pour le grand project dans ma dernière année à Exeter, j'ai développé une nouvelle méthode algorithmique pour
+                        le découpage électoral qui utilise le renforcement de l'apprentissage pour optimiser les solutions pour l'équité.
+                        Le modèle était appliqué au Royaume-Uni et il évaluait l'équité avec une nouvelle métrique, le ‘Seats-Votes
+                        difference,’ qui peut comparer directement la part de vote de chaque partie et le nombre de sièges qui lui sont
+                        attribués pour trouver les frontières qui peuvent représenter le plus précisément et équitablement l'électorat.
+                    </p><p class="project-descr">
+                        Le project a fini en Mai 2022, mais j'ai trouvé que le modèle a pu améliorer l'équité des frontières électorales
+                        dans chaque expérience réalisée. Le projet lui-même, le code source et le rapport final peuvent être trouvés sur
+                        <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, et un papier sur l'algorithme sera publié
+                        dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>
+                        Workshop on Data Science for Social Good</a>" à Grenoble en septembre.
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="redistricter"></div></div>`
         },
-        "mdt-description": {
-            "eng": `<div class="project-hdr" onclick="dropDown('project3')"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></div>
-                    <div class="collapse project-body" id="project3body">
-                        <p class="project-descr">
-                            The project was developed for my 3rd-year dissertation and consisted of
-                            creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
-                            the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
-                            to even non-experts, in this case showing the effect of traffic on emissions.
-                        </p><p class="project-descr">
-                            The completed project source code and report can be seen on <a href="https://github.com/calluume/mdt_project">GitHub</a>.
-                        </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
-                    </div>`,
-            "fr":  `<div class="project-hdr" onclick="dropDown('project3')"><h1 class="project-title">The Manchester Digital Twin</h1><img class="project-btn" src="images/chevron.svg" id="project3btn"></div>
-                    <div class="collapse project-body" id="project3body">
-                        <p class="project-descr">
-                            Ce projet était développé pour le grand projet de ma troisième année impliquait la création d'un ‘digital twin’ du centre de
-                            Manchester, en concentrant sur la simulation de la circulation et ses émissions. Le but principal était de montrer comment les
-                            ‘digital twins’ pourrait être utilisés pour communiquer les problèmes et les systèmes complexes où il y a abondance de données 
-                            à tout le monde, même aux non-experts.
-                        </p><p class="project-descr">
-                            Le code source et le rapport final peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project">GitHub</a>.
-                        </p>
-                        <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="project3"></div></div>
-                    </div>`
+        "mdttitle": { "eng": "The Manchester Digital Twin", "fr": "The Manchester Digital Twin"},
+        "mdtbody": {
+            "eng": `<p class="project-descr">
+                        The project was developed for my 3rd-year dissertation and consisted of
+                        creating a digital twin of central Manchester, focusing on traffic simulation and resulting emissions. This had
+                        the ultimate goal of showing how digital twins could be used to convey complex and data-rich problems and systems
+                        to even non-experts, in this case showing the effect of traffic on emissions.
+                    </p><p class="project-descr">
+                        The completed project source code and report can be seen on <a href="https://github.com/calluume/mdt_project">GitHub</a>.
+                    </p>
+                    <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="mdt"></div></div>`,
+            "fr":  `<p class="project-descr">
+                        Ce projet était développé pour le grand projet de ma troisième année impliquait la création d'un ‘digital twin’ du centre de
+                        Manchester, en concentrant sur la simulation de la circulation et ses émissions. Le but principal était de montrer comment les
+                        ‘digital twins’ pourrait être utilisés pour communiquer les problèmes et les systèmes complexes où il y a abondance de données 
+                        à tout le monde, même aux non-experts.
+                    </p><p class="project-descr">
+                        Le code source et le rapport final peuvent être trouvés sur <a href="https://github.com/calluume/mdt_project">GitHub</a>.
+                    </p>
+                    <div class="resizeable-outer-div project-img"><div class="resizeable-inner-div" id="mdt"></div></div>`
         },
-        "aco-description": {
-            "eng": `<div class="project-hdr" onclick="dropDown('project2')"><h1 class="project-title">Ant Colony Optimisation</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></div>
-                    <div class="collapse project-body" id="project2body">
-                        <p class="project-descr">
-                            This is one of my smaller projects and looked at applying ant colony optimisation techniques to a 2D ant colony simulation.
-                            The project aimed to research swarm intelligence and works by simulating ants moving around a board, looking for randomly
-                            placed food, with their movements influenced by pheromones laid by other ants. Over time, the movements of the colony
-                            should converge to optimal paths between their home and food.    
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 400px;"><div class="resizeable-inner-div" id="project2"></div></div>
-                    </div>`,
-            "fr":  `<div class="project-hdr" onclick="dropDown('project2')"><h1 class="project-title">Optimisation des Colonies de Fourmis</h1><img class="project-btn" src="images/chevron.svg" id="project2btn"></div>
-                    <div class="collapse project-body" id="project2body">
-                        <p class="project-descr">
-                            Ceci est un de mes projets plus petits et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
-                            simulation 2D. Le projet vise à rechercher l'intelligence d'essaim et marche par la simulation des fourmis sur un tableau, qui
-                            cherche la nourriture réparties au hasard, avec leurs mouvements influencés par les phéromones des autres fourmis. Au fil du
-                            temps, les mouvements des fourmis devraient converger vers un chemin optimal entre la colonie et la nourriture.
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 400px;"><div class="resizeable-inner-div" id="project2"></div></div>
-                    </div>`
+        "acotitle": { "eng": "Ant Colony Optimisation", "fr": "Optimisation des Colonies de Fourmis"},
+        "acobody": {
+            "eng": `<p class="project-descr">
+                        This is one of my smaller projects and looked at applying ant colony optimisation techniques to a 2D ant colony simulation.
+                        The project aimed to research swarm intelligence and works by simulating ants moving around a board, looking for randomly
+                        placed food, with their movements influenced by pheromones laid by other ants. Over time, the movements of the colony
+                        should converge to optimal paths between their home and food.    
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 400px;"><div class="resizeable-inner-div" id="aco"></div></div>`,
+            "fr":  `<p class="project-descr">
+                        Ceci est un de mes projets plus petits et il essaye d'appliquer les techniques de l'optimisation des colonies de fourmis à une
+                        simulation 2D. Le projet vise à rechercher l'intelligence d'essaim et marche par la simulation des fourmis sur un tableau, qui
+                        cherche la nourriture réparties au hasard, avec leurs mouvements influencés par les phéromones des autres fourmis. Au fil du
+                        temps, les mouvements des fourmis devraient converger vers un chemin optimal entre la colonie et la nourriture.
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 400px;"><div class="resizeable-inner-div" id="aco"></div></div>`
         },
-        "webdev-description": {
-            "eng": `<div class="project-hdr" onclick="dropDown('project4')"><h1 class="project-title">Web Development Projects</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></div>
-                    <div class="collapse project-body" id="project4body">
-                        <p class="project-descr">
-                            Throughout my time at Exeter, I also completed many other smaller web development projects, in and outside
-                            of my course. For example, I created a basic site for my family’s holiday let (<a href="https://tawelfa.com">tawelfa.com</a>), and in 2nd year, I played a
-                            large role in the design and branding of a group software development project as pictured below. The brief was
-                            to create an interactive treasure hunt centred around the university, and our group decided to make it into a
-                            story-based web app called ‘Hunt Dayo.’
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="project4"></div></div>
-                    </div>`,
-            "fr":  `<div class="project-hdr" onclick="dropDown('project4')"><h1 class="project-title">Projets de Développement Web</h1><img class="project-btn" src="images/chevron.svg" id="project4btn"></div>
-                    <div class="collapse project-body" id="project4body">
-                        <p class="project-descr">
+        "webdevtitle": { "eng": "Web Development Projects", "fr": "Projets de Développement Web"},
+        "webdevbody": {
+            "eng": `<p class="project-descr">
+                        Throughout my time at Exeter, I also completed many other smaller web development projects, in and outside
+                        of my course. For example, I created a basic site for my family’s holiday let (<a href="https://tawelfa.com">tawelfa.com</a>), and in 2nd year, I played a
+                        large role in the design and branding of a group software development project as pictured below. The brief was
+                        to create an interactive treasure hunt centred around the university, and our group decided to make it into a
+                        story-based web app called ‘Hunt Dayo.’
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="webdev"></div></div>`,
+            "fr":  `<p class="project-descr">
                         Tout au long de mon séjour à Exeter, j'ai aussi achevé d'autres projets de développement Web plus petits, à part mes études et aux côtés.
                         Par exemple, j'ai créé un site simple pour le gîte de ma famille (<a href="https://tawelfa.com">tawelfa.com</a>), et dans ma deuxième année, j'ai joué un grand rôle dans le design et l'image
                         de marque d'un projet de développement logiciel du groupe. Le brief était de créer une application de chasse au trésor interactif qui se
                         concentrait sur l'université, et notre groupe a décidé de faire une application web basée sur une histoire qui s'appelait ‘Hunt Dayo.'
-                        </p>
-                        <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="project4"></div></div>
-                    </div>`
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 350px;"><div class="resizeable-inner-div" id="webdev"></div></div>`
+        }
+    },
+    "publications-page": {
+        "publications-title": { "eng": "Publications", "fr": "Publications"},
+        "publications-description": {
+            "eng": `<p class="content-txt">
+                        My main research interests centre around the combination of urban and Computer Science, particularly looking at the
+                        social and environmental impact of cities and transportation, however, I’m also interested in other fields such as nature-inspired or applications
+                        of Computer Science, machine learning and web development. My GitHub profile can be found <a href="https://github.com/calluume">here</a> and will expand as I
+                        develop more projects alongside my studies, but below is an outline of some of my more recent projects.
+                    </p>`,
+        },
+        "publication1": {
+            "eng": `<h1>A Reinforcement Learning Algorithm for Fair Electoral Redistricting in Parliamentary Systems</h1>
+                    <p>Callum Evans, Hugo Barbosa 'A Reinforcement Learning Algorithm for Fair Electoral Redistricting in Parliamentary Systems' in <i>SoGood 2022: The 7th Workshop on Data Science for Social Good</i>.
+                    Grenoble, France: September 23<sup>rd</sup> 2022</p>`
         }
     }
 }

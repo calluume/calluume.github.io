@@ -284,26 +284,26 @@ a:hover {
     font-weight: 300;
 }
 
-#project1 {
+#redistricter {
     /* Redistricter */
     position: relative;
     background-repeat: none;
     background-size: auto 100%;
     background-image: url('https://i.imgur.com/HplgaGI.gif');
 }
-#project2 {
+#aco {
     /* ACO */
     position: relative;
     background-repeat: none;
     background-size: auto 100%;
     background-image: url('https://i.imgur.com/ou5xGU3.png');
 }
-#project3 {
+#mdt {
     /* MDT */
     position: relative;
     background-image: url('https://i.imgur.com/rM5lKlj.png');
 }
-#project4 {
+#webdev {
     /* Hunt Dayo */
     position: relative;
     background-image: url('https://i.imgur.com/WjmreLp.png');
@@ -487,4 +487,23 @@ textarea {
 .footer-div p {
     margin: 0;
     text-align: center;
+}
+
+.publications-parent {
+    margin-top: 60px !important;
+    margin-bottom: 40px !important;
+}
+
+.publication-tile {
+    width: 100%;
+}
+
+.publication-tile h1 {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.publication-tile p {
+    font-size: 1em;
+    margin: 0 0 20px 5%;
 }
