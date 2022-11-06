@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>Callum Evans | About Me</title>
+        <title>Callum Evans | Publications</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="icon" href="images/icon.png">
@@ -9,42 +9,35 @@
         <script src="js/loadtext.js"></script>
         <style>
             :root {
-                --main-bg: rgb(244, 241, 222);
-                --main-accent: rgb(224, 122, 95);
+                --main-bg: rgb(55, 80, 92);
+                --main-accent: rgb(244, 241, 222);
             }
         </style>
     </head>
     <body>
-        <div class="homescreen-div">
+        <div class="homescreen-div" id="projects-homescreen">
             <table class="menu-table"><tbody><tr id="menu-table-tr">
+                <td class="menu-link"><a href='index.html' hreflang="en" id="menu-home"></a></td>
                 <td class="menu-link"><a href='projects.html' hreflang="en" id="menu-projects"></a></td>
                 <td class="menu-link"><a href="https://github.com/calluume">GitHub</a></td>
                 <td class="menu-link"><a href="javascript:toggleContactForm()" id="menu-contact"></a></td>
             </tr></tbody></table>
-            <p class="homescreen-title"><b>Callum Evans</b><br><span id="subheading"></span></p>
+            <p class="homescreen-title" id="publications-title"></p>
         </div>
+
         <div class="content-div">
-            <div class="content-inner-div" id="section1"></div>
-        </div>
-        <div class="resizeable-outer-div" id="callum-outer"><div class="resizeable-inner-div" id="callum-inner"></div></div>
-        <div class="content-div">
-            <div class="content-inner-div" id="section2"></div>
-        </div>
-        <div class="content-div">
-            <table class="experience-table"><tbody>
-                <p class="content-title" id="prev-exp"></p>
-                <tr class="experience-row" id="epsrc-description"></tr>
-                <tr class="experience-row" id="school-description"></tr>
-                <tr class="experience-row" id="itts-description"></tr>
-                <tr class="experience-row" id="sailing-description"></tr>
-            </tbody></table>
+            <div class="content-inner-div" id="publications-description"></div>
+            <div class="content-inner-div publications-parent">
+                <div class="publication-tile" id="publication1"></div>
+            </div>
         </div>
 
         <div class="footer-div" id="footer-div"></div>
         <div class="contact-shadow" id="contact-shadow" style="display: none;"></div>
+
     </body>
 </html>
 <script>
-    loadText("home-page", getLanguage())
+    loadText("publications-page", getLanguage())
 </script>
 <script src="js/email.js"></script>

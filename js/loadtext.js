@@ -11,13 +11,45 @@ webText = {
         "menu-publications": { "eng": "Publications", "fr": "Publications"},
         "footer-div": {
             "eng": `<p>
-                        Contact me at: <a href="mailto:callumdoneevans@gmail.com">callumdoneevans@gmail.com</a><br>
+                        Contact me at: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a><br>
                         Last updated: <span id="last-updated"></span>
                     </p>`,
             "fr":  `<p>
-                        Me contacter au: <a href="mailto:callumdoneevans@gmail.com">callumdoneevans@gmail.com</a><br>
+                        Me contacter au: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a><br>
                         Dernière mise à jour: <span id="last-updated"></span>
                     </p>`
+        },
+        "contact-shadow": {
+            "eng": `<svg class="contact-close" onclick="javascript:toggleContactForm()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" overflow="visible" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x2="20" y2="20" />
+                        <line x1="20" y2="20" />
+                    </svg>
+                    <div class="contact-form-div">
+                        <form class="contact-form" id="contact-form">
+                            <input type="text" name="subject" id="input-subject" placeholder="Subject">
+                            <input type="email" name="email" id="input-email" placeholder="Email">
+                            <textarea name="text" id="input-message" placeholder="Message"></textarea>
+                            <input type="submit" id="js_send" value="Send Message">
+                            <p id="contact-error-msg" class="contact-error-msg">An error occured whilst trying to send your message.<br>Please try again later.</p>
+                            <p id="contact-invalid-msg" class="contact-error-msg">Please fill in all details.</p>
+                        </form>
+                    </div>
+                    <p id="contact-postmail">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>`,
+            "fr":  `<svg class="contact-close" onclick="javascript:toggleContactForm()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" overflow="visible" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <line x2="20" y2="20" />
+                        <line x1="20" y2="20" />
+                    </svg>
+                    <div class="contact-form-div">
+                        <form class="contact-form" id="contact-form">
+                            <input type="text" name="subject" id="input-subject" placeholder="Sujet">
+                            <input type="email" name="email" id="input-email" placeholder="Votre e-mail">
+                            <textarea name="text" id="input-message" placeholder="Votre message"></textarea>
+                            <input type="submit" id="js_send" value="Envoyer">
+                            <p id="contact-error-msg" class="contact-error-msg">Une erreur s'est produite lors de l'envoi de votre message.<br>Veuillez réessayer plus tard.</p>
+                            <p id="contact-invalid-msg" class="contact-error-msg">Veuillez remplir tous les champs.</p>
+                        </form>
+                    </div>
+                    <p id="contact-postmail">Ce site utilise <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>`
         }
     },
     "home-page": {
@@ -319,31 +351,29 @@ function changeLanguage(newLanguage) {
     window.location.reload()
 }
 
-function displayLastUpdate(language) {
+function getDateString(date, language) {
     frMonths = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
     enMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-    if (document.getElementById('last-updated')) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            let repos = JSON.parse(this.responseText);
-            repos.forEach((repo)=>{
-                if (repo.name == "stebey.github.io") {
-                    date = new Date(repo.pushed_at)
-                    if (language == "fr") {
-                        month = frMonths[date.getMonth()]
-                        at = 'à'
-                    } else {
-                        month = enMonths[date.getMonth()]
-                        at = 'at'
-                    }
-                    document.getElementById('last-updated').innerHTML += ` <i>${date.getDate()} ${month}, ${date.getFullYear()} ${at} ${zeroPad(date.getHours())}:${zeroPad(date.getMinutes())}</i>`
-                }
-            });
-        }
-        };
-        xhttp.open("GET", "https://api.github.com/users/calluume/repos", true);
-        xhttp.send();
+    if (language == "fr") {
+        month = frMonths[date.getMonth()]
+        at = 'à'
+    } else {
+        month = enMonths[date.getMonth()]
+        at = 'at'
     }
+
+    return `<i>${date.getDate()} ${month}, ${date.getFullYear()} ${at} ${zeroPad(date.getHours())}:${zeroPad(date.getMinutes())}</i>`
+}
+
+function displayLastUpdate(language) {
+    fetch("https://api.github.com/repos/calluume/calluume.github.io").then(function(response) {
+        return response.json()
+    }).then(function(data) {
+        date = new Date(data.updated_at)
+        dateString = getDateString(date, language)
+        document.getElementById('last-updated').innerHTML += ' ' + dateString
+    }).catch(function() {
+        console.log(`Could not fetch last updated.`)
+    })
 }

@@ -35,7 +35,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    font-family: 'Newsreader', sans-serif;
+    font-family: 'Newsreader', serif;
     background-color: var(--main-bg);
     color: var(--main-accent);
     line-height: 1.4;
@@ -103,16 +103,16 @@ body {
         padding: 0 20px;
     }
 
-    .contact-form {
-        width: 70% !important;
-    }
-
     .hide600 {
         display: none !important;
     }
 
     .show600 {
         display: inline !important;
+    }
+
+    .contact-form-div {
+        width: 90% !important;
     }
 
 }
@@ -132,6 +132,7 @@ a {
 .menu-link a {
     font-weight: 300;
     text-decoration: none;
+    user-select: none;
 }
 
 .menu-table {
@@ -196,16 +197,6 @@ a {
 .experience-descr {
     font-weight: 300;
     line-height: 1.4;
-}
-
-.contact-div {
-    height:100%;
-    width: 100%;
-    overflow: hidden;
-    background-color: var(--main-bg);
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 #callum-outer {
@@ -384,6 +375,10 @@ a {
     transition: 0.2s;
 }
 
+a:active {
+    color: var(--main-accent) !important;
+}
+
 p a {
     font-style: italic !important;
     text-decoration: underline;
@@ -393,17 +388,50 @@ a:hover {
     opacity: 0.8;
 }
 
-.contact-form {
-    width: 30%;
+.contact-shadow {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--main-bg);
+}
+
+.contact-form-div {
     position: absolute;
+    width: 40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
+#contact-postmail {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-error-msg {
+    font-weight: bold;
+    display: none;
+}
+
+.contact-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-close:hover {
+    opacity: 0.8;
+}
+
 input {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Newsreader', sans-serif;
     border: none;
     margin: 10px 0;
     background-color: white;
@@ -412,29 +440,40 @@ input {
 
 input[type=text] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 
 input[type=email] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 }
 input[type=submit] {
-    padding: 10px 40px;
-    background-color: var(--main-accent);
-    border: none;
-    color: var(--main-bg);
+    font-weight: bold;
+    font-family: 'Newsreader', serif;
+    padding: 15px;
+    width: 50%;
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-accent);
+    color: var(--main-accent);
     cursor: pointer;
     transition: 0.2s;
 }
 input[type=submit]:hover {
-    transform: scale(0.98)
+    background-color: var(--main-accent);
+    color: var(--main-bg);
+}
+
+.sending {
+    background-color: var(--main-accent) !important;
+    color: var(--main-bg) !important;
+    cursor: initial !important;
 }
 
 textarea {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Newsreader', sans-serif;
     width: 100%;
-    padding: 10px;
+    height: 100px;
+    padding: 15px;
     resize: none;
     margin: 10px 0;
     background-color: white;
@@ -447,7 +486,6 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    animation: fadeIn 1s ease;
 }
 
 .message-title {
@@ -458,9 +496,22 @@ textarea {
     margin: 0;
 }
 
+.fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
 }
 
 /*#francais:hover {
