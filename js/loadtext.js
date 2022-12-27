@@ -68,7 +68,7 @@ webText = {
                         applied to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
                         to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
                         in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
-                        part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>Workshop on
+                        part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on
                         Data Science for Social Good</a>," which took place in Grenoble last September. 
                     </p><p class="content-txt">
                         The source code and reports for these projects, as well as others done alongside my degree, are available
