@@ -56,61 +56,55 @@ webText = {
         "subheading": { "eng": "Computer Science Student", "fr": "Étudiant en informatique", "nl": "Promovendus in de informatica" },
         "section1": {
             "eng": `<p class="content-txt">
-                        I have recently finished the 4<sup>th</sup> and final year of my MSci in Computer Science at the University of Exeter and plan
-                        on continuing my studies in 2022 with a PhD. Throughout my time at Exeter, I have gained experience in many different
-                        fields within Computer Science, including data science, evolutionary computation, artificial intelligence and machine
-                        learning, however, I'm mainly interested in urban informatics and its applications within environmental and social sciences.
+                        I am currently a 1<sup>st</sup> year PhD student at TU Delft in the Netherlands, studying traffic management and Computer Science with
+                        a focus on control theory and continual learning models. I graduated with a first-class MSci Computer Science degree at the
+                        University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
+                        artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
+                        urban, environmental and social sciences.
                     </p><p class="content-txt">
-                        Specifically, for my 3<sup>rd</sup> year project, as I became more interested in urban science and transportation, I chose
-                        to create an urban digital twin of Manchester with a focus on traffic and emissions simulations. The project had the main
-                        goal of showing how digital twins and data visualisation can be incredibly useful in conveying complex and data-rich problems,
-                        such as climate change, and did well towards this goal. Then, for my master's dissertation, I decided I wanted to research
-                        social issues using data science and developed a new reinforcement learning algorithm for electoral redistricting, applied
-                        to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
-                        to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed
-                        to work in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper
-                        to be published as part of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>
-                        Workshop on Data Science for Social Good</a>" in Grenoble this September.
+                        For example, my third-year project at Exeter involved creating a traffic and emissions simulation of the centre of Manchester with
+                        the goal of showing how digital twins and data visualisation can be incredibly useful in conveying complex and data-rich problems,
+                        like climate change. Then, for my master’s dissertation, I developed a new reinforcement learning algorithm for electoral redistricting,
+                        applied to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
+                        to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
+                        in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
+                        part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>Workshop on
+                        Data Science for Social Good</a>," which took place in Grenoble last September. 
                     </p><p class="content-txt">
-                        Both of these completed projects, including their source code and final report can be found <a href="https://github.com/calluume/mdt_project">here</a>,
-                        on GitHub.
+                        The source code and reports for these projects, as well as others done alongside my degree, are available
+                        <a href="https://github.com/calluume/mdt_project">here</a>, on GitHub.
                     </p>`,
             "fr":  `<p class="content-txt">
-                        Récemment, j'ai fini la 4e et la dernière année de ma maîtrise en informatique à l'université d'Exeter et
-                        maintenant j'ai l'intention de continuer mes études en 2022 en faisant un doctorat. Tout au long de mon temps à Exeter, j'ai
-                        gagné beaucoup d'expérience dans plusieurs domaines d'informatique différents, y compris le calcul évolutif,
-                        l'intelligence artificielle et le machine learning, cependant je m'intéresse surtout aux sciences urbaines et à
-                        ses applications dans les sciences sociales et environnementales.
+                        Je suis actuellement doctorat en première année à TU Delft aux Pays-bas, où j'étudie l'ingénierie du trafic et l'informatique
+                        en mettant l'accent sur la théorie du contrôle et l'apprentissage continuel. J'ai obtenu un diplôme MSci Computer Science de
+                        première classe à l'Université d'Exeter en juin 2022 où j'ai gagné beaucoup d'expérience dans plusieurs domaines d'informatique
+                        différents, y compris le calcul évolutif, l'intelligence artificielle et le machine learning, cependant, mes principaux intérêts
+                        de recherche sont les applications de l'informatique avec les sciences urbaines, environnementales et sociales.
                     </p><p class="content-txt">
-                        Particulièrement, pour le projet de ma 3e année, après être devenu plus intéressé par les sciences urbaines et le
-                        transport, j'ai choisi de créer un ‘urban digital twin’ de Manchester qui se concentrait sur la circulation et les émissions
-                        de gaz d'échappement. Le but principal du projet était de montrer comment les ‘digital twins’ et la visualisation peuvent
-                        être vraiment utiles pour communiquer les problèmes complexes où il y a abondance de données, comme le changement climatique,
-                        et il était un gros succès. Puis, pour le grand projet de ma maîtrise, j'ai décidé que je voulais faire plus de recherche sur
-                        les problèmes sociaux et la science des données avec le développement d'une nouvelle méthode algorithmique pour le découpage
-                        électoral qui utilise le renforcement de l'apprentissage, qui était appliquée au Royaume-Uni. L'algorithme visait à optimiser
-                        les frontières des circonscriptions électorales du Royaume-Uni tout en accordant la priorité à la capacité des frontières de
-                        représenter le plus précisément et équitablement l'électorat avec une nouvelle métrique, le ‘Seats-Votes difference,’ qui
-                        était conçue pour fonctionner dans les systèmes parlementaires. Dans l'ensemble, le projet était un vrai succès et le papier
-                        résultant sera publié dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>
-                        Workshop on Data Science for Social Good</a>" à Grenoble en septembre.
+                        Par exemple, le projet de ma troisième année à Exeter consistait à créer une simulation du trafic et des émissions du centre de
+                        Manchester en visant de montrer comment les ‘digital twins' et la visualisation peuvent être vraiment utiles pour communiquer les
+                        problèmes complexes où il y a abondance de données, comme le changement climatique. Puis, pour le grand projet de ma maîtrise,
+                        j'ai développé un nouvel algorithme pour le découpage électoral qui utilise le renforcement de l'apprentissage, qui était appliqué
+                        au Royaume-Uni. L'algorithme visait à optimiser les frontières des circonscriptions électorales du Royaume-Uni tout en accordant
+                        la priorité à la capacité des frontières de représenter le plus précisément et équitablement l'électorat avec une nouvelle métrique,
+                        le ‘Seats-Votes difference,' qui était conçue pour fonctionner dans les systèmes parlementaires. Dans l'ensemble, le projet était
+                        un vrai succès et le papier résultant sera publié dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood
+                        2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre.
                     </p><p class="content-txt">
-                        Ces projets achevés peuvent être trouvés <a href="https://github.com/calluume/mdt_project">ici</a> avec leurs codes source et
-                        leurs rapports finaux.
+                        Les codes source et les rapports pour ces projets, ainsi que mes autres projets, sont accessibles
+                        <a href="https://github.com/calluume/mdt_project">ici</a> sur GitHub.
                     </p>`
         },
         "section2": {
             "eng": `<p class="content-txt">
-                        Outside of study, I also love surfing and sailing which I have been doing at my local reservoir since 2010, even achieving my RYA
-                        instructor qualifications in 2015. I really enjoy learning languages too, particularly French which I have been learning
-                        since the beginning of the COVID-19 pandemic after having stopped a few years ago. Then, in December 2021, I was very happy
-                        to be able to pass the DALF C1 exam in French, which I hope should allow me to study or work in France in the future.
+                        Outside of study, I also love surfing and sailing which I have been doing at my local reservoir since 2010, even achieving my
+                        RYA instructor qualifications in 2015. I also really enjoy learning languages, particularly Dutch which I started to learn
+                        before moving to Delft and French which I was able to pass the DALF C1 exam for in December 2021.
                     </p>`,
             "fr":  `<p class="content-txt">
                         À part mes études, j'aime bien faire du surf et la voile que je fais à mon réservoir local depuis 2010, même obtenant mes diplômes
-                        d'instructeur avec le RYA en 2015. Je suis aussi très intéressé par l'apprentissage des langues, particulièrement le français que
-                        j'apprends depuis le début de la pandémie de COVID-19 après avoir arrêté il y a quelques années. Puis, en décembre 2021, j'étais
-                        vraiment content de réussir l'examen de DALF C1, qui j'espère me permettrai d'étudier ou de travailler en France à l'avenir.
+                        d'instructeur avec le RYA en 2015. Je suis aussi très intéressé par l'apprentissage des langues, particulièrement le néerlandais que
+                        j’ai commencé à apprendre avant d’avoir déménagé à Delft et le français pour lequel j'ai pu passer l'examen DALF C1 en décembre 2021.
                     </p>`
         },
         "prev-exp": {"eng": "<b>Previous Experience</b>", "fr": "<b>Expérience Préalable</b>"},
