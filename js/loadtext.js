@@ -364,7 +364,9 @@ function displayLastUpdate(language) {
     fetch("https://api.github.com/repos/calluume/calluume.github.io").then(function(response) {
         return response.json()
     }).then(function(data) {
-        date = new Date(data.updated_at)
+        if (new Date(data.pushed_at) > new Date(data.updated_at)) {
+            date = new Date(data.pushed_at)
+        } else { date = new Date(data.updated_at) }
         dateString = getDateString(date, language)
         document.getElementById('last-updated').innerHTML += ' ' + dateString
     }).catch(function() {
