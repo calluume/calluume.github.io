@@ -72,7 +72,7 @@ webText = {
                         Data Science for Social Good</a>," which took place in Grenoble last September. 
                     </p><p class="content-txt">
                         The source code and reports for these projects, as well as others done alongside my degree, are available
-                        <a href="https://github.com/calluume/mdt_project">here</a>, on GitHub.
+                        <a href="https://github.com/calluume">here</a>, on GitHub.
                     </p>`,
             "fr":  `<p class="content-txt">
                         Je suis actuellement doctorat en première année à TU Delft aux Pays-bas, où j'étudie l'ingénierie du trafic et l'informatique
@@ -92,7 +92,7 @@ webText = {
                         2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre.
                     </p><p class="content-txt">
                         Les codes source et les rapports pour ces projets, ainsi que mes autres projets, sont accessibles
-                        <a href="https://github.com/calluume/mdt_project">ici</a> sur GitHub.
+                        <a href="https://github.com/calluume">ici</a> sur GitHub.
                     </p>`
         },
         "section2": {
