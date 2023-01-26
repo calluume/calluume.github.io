@@ -215,7 +215,7 @@ webText = {
                         boundaries in every experiment performed. The source code and final report can be found on
                         <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, with a paper on the algorithm to be published as part
                         of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on Data Science
-                        for Social Good</a>" in Grenoble this September.
+                        for Social Good</a>" in Grenoble last September.
                     </p>
                     <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="redistricter"></div></div>`,
             "fr":  `<p class="project-descr">
@@ -229,7 +229,7 @@ webText = {
                         dans chaque expérience réalisée. Le projet lui-même, le code source et le rapport final peuvent être trouvés sur
                         <a href="https://github.com/calluume/UK_redistricter">GitHub</a>, et un papier sur l'algorithme sera publié
                         dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup>
-                        Workshop on Data Science for Social Good</a>" à Grenoble en septembre.
+                        Workshop on Data Science for Social Good</a>" à Grenoble en septembre dernier.
                     </p>
                     <div class="resizeable-outer-div project-img" style="height: 300px;"><div class="resizeable-inner-div" id="redistricter"></div></div>`
         },
