@@ -62,18 +62,6 @@ webText = {
                         University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
                         artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
                         urban, environmental and social sciences.
-                    </p><p class="content-txt">
-                        For example, my third-year project at Exeter involved creating a traffic and emissions simulation of the centre of Manchester with
-                        the goal of showing how digital twins and data visualisation can be incredibly useful in conveying complex and data-rich problems,
-                        like climate change. Then, for my master’s dissertation, I developed a new reinforcement learning algorithm for electoral redistricting,
-                        applied to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
-                        to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
-                        in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
-                        part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on
-                        Data Science for Social Good</a>," which took place in Grenoble in September 2022. 
-                    </p><p class="content-txt">
-                        The source code and reports for these projects, as well as others done alongside my degree, are available
-                        <a href="https://github.com/calluume">here</a>, on GitHub.
                     </p>`,
             "fr":  `<p class="content-txt">
                         Je suis actuellement doctorat en ${getPhDYear('fr')} année à TU Delft aux Pays-bas, où j'étudie l'ingénierie du trafic et l'informatique
@@ -81,7 +69,21 @@ webText = {
                         première classe à l'Université d'Exeter en juin 2022 où j'ai gagné beaucoup d'expérience dans plusieurs domaines d'informatique
                         différents, y compris le calcul évolutif, l'intelligence artificielle et le machine learning, cependant, mes principaux intérêts
                         de recherche sont les applications de l'informatique avec les sciences urbaines, environnementales et sociales.
-                    </p><p class="content-txt">
+                    </p>`
+        },
+        "section2": {
+            "eng": `<p class="content-txt">
+                        For example, my third-year project at Exeter involved creating a traffic and emissions simulation of the centre of Manchester with
+                        the goal of showing how digital twins and data visualisation can be incredibly useful in conveying complex and data-rich problems,
+                        like climate change. Then, for my master’s dissertation, I developed a new reinforcement learning algorithm for electoral redistricting,
+                        applied to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
+                        to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
+                        in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
+                        part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on
+                        Data Science for Social Good</a>," which took place in Grenoble in September 2022. The source code and reports for these projects, as well as others done alongside my degree, are available
+                        <a href="https://github.com/calluume">here</a>, on GitHub.
+                    </p>`,
+            "fr":  `<p class="content-txt">
                         Par exemple, le projet de ma troisième année à Exeter consistait à créer une simulation du trafic et des émissions du centre de
                         Manchester en visant de montrer comment les ‘digital twins' et la visualisation peuvent être vraiment utiles pour communiquer les
                         problèmes complexes où il y a abondance de données, comme le changement climatique. Puis, pour le grand projet de ma maîtrise,
@@ -90,13 +92,11 @@ webText = {
                         la priorité à la capacité des frontières de représenter le plus précisément et équitablement l'électorat avec une nouvelle métrique,
                         le ‘Seats-Votes difference,' qui était conçue pour fonctionner dans les systèmes parlementaires. Dans l'ensemble, le projet était
                         un vrai succès et le papier résultant sera publié dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood
-                        2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre 2022.
-                    </p><p class="content-txt">
-                        Les codes source et les rapports pour ces projets, ainsi que mes autres projets, sont accessibles
+                        2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre 2022. Les codes source et les rapports pour ces projets, ainsi que mes autres projets, sont accessibles
                         <a href="https://github.com/calluume">ici</a> sur GitHub.
                     </p>`
         },
-        "section2": {
+        "section3": {
             "eng": `<p class="content-txt">
                         Outside of study, I also love surfing and sailing which I have been doing at my local reservoir since 2010, even achieving my
                         RYA instructor qualifications in 2015. I also really enjoy learning languages, particularly Dutch which I started to learn

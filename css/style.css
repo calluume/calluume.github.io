@@ -43,7 +43,7 @@ body {
 
 @media (max-width: 600px) {
     .homescreen-div {
-        height: 70% !important;
+        height: 50% !important;
     }
 
     .homescreen-title {
@@ -150,7 +150,7 @@ a {
 }
 
 .homescreen-div {
-    height: 85%;
+    height: 70%;
     position: relative;
 }
 
@@ -173,7 +173,7 @@ a {
     text-align: center;
 }
 .content-txt {
-    font-size: 14pt;
+    font-size: 1.2em;
     font-weight: 300;
 }
 #prev-exp {
@@ -211,8 +211,33 @@ a {
     background-image: url('https://i.imgur.com/ybXlSQV.jpg');
 }
 
+@media (min-width: 1200px) {
+    #callum-outer {
+        width: 30% !important;
+        height: 400px !important;
+        margin: 35px 35% !important;
+    }
+
+}
+
+#callumdiss-outer {
+    width: 40%;
+    height: 350px;
+    margin: 35px 30%;
+}
+#callumdiss-inner {
+    background-image: url('https://i.imgur.com/hQc2v7B.jpg');
+}
+
 .resizeable-outer-div {
     overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .resizeable-outer-div {
+        width: calc(100% - 40px) !important;
+        margin: 35px 20px !important;
+    }
 }
 
 .resizeable-inner-div {
@@ -543,14 +568,6 @@ textarea {
     text-align: center;
 }
 
-#publications-homescreen {
-    height: 75%;
-}
-
-#projects-homescreen {
-    height: 75%;
-}
-
 .publications-parent {
     margin-bottom: 40px !important;
 }
@@ -560,11 +577,11 @@ textarea {
 }
 
 .publication-tile h1 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0;
 }
 
 .publication-tile ul {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0 0 20px 0;
 }
