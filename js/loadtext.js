@@ -7,15 +7,16 @@ webText = {
     "all-pages": {
         "menu-home": {"eng": "About Me", "fr": "Page d'acceuil"},
         "menu-projects": { "eng": "Projects", "fr": "Projets" },
+        "menu-publications": { "eng": "Publications", "fr": "Publications" },
         "menu-contact": { "eng": "Contact", "fr": "Contacter" },
         "menu-publications": { "eng": "Publications", "fr": "Publications"},
         "footer-div": {
             "eng": `<p>
-                        Contact me at: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a><br>
+                        Contact me at: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a> or <i>c.evans@tudelft.nl</i><br>
                         Last updated: <span id="last-updated"></span>
                     </p>`,
             "fr":  `<p>
-                        Me contacter au: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a><br>
+                        Me contacter au: <a href="javascript:toggleContactForm()">callumdoneevans@gmail.com</a> ou <i>c.evans@tudelft.nl</i><br>
                         Dernière mise à jour: <span id="last-updated"></span>
                     </p>`
         },
@@ -53,10 +54,10 @@ webText = {
         }
     },
     "home-page": {
-        "subheading": { "eng": "Computer Science Student", "fr": "Étudiant en informatique", "nl": "Promovendus in de informatica" },
+        "subheading": { "eng": "PhD Student", "fr": "Étudiant en Doctorat", "nl": "Promovendus in de informatica" },
         "section1": {
             "eng": `<p class="content-txt">
-                        I am currently a 1<sup>st</sup> year PhD student at TU Delft in the Netherlands, studying traffic management and Computer Science with
+                        I am currently a ${getPhDYear('eng')} year PhD student at TU Delft in the Netherlands, studying traffic management and Computer Science with
                         a focus on control theory and continual learning models. I graduated with a first-class MSci Computer Science degree at the
                         University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
                         artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
@@ -69,13 +70,13 @@ webText = {
                         to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
                         in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
                         part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on
-                        Data Science for Social Good</a>," which took place in Grenoble last September. 
+                        Data Science for Social Good</a>," which took place in Grenoble in September 2022. 
                     </p><p class="content-txt">
                         The source code and reports for these projects, as well as others done alongside my degree, are available
                         <a href="https://github.com/calluume">here</a>, on GitHub.
                     </p>`,
             "fr":  `<p class="content-txt">
-                        Je suis actuellement doctorat en première année à TU Delft aux Pays-bas, où j'étudie l'ingénierie du trafic et l'informatique
+                        Je suis actuellement doctorat en ${getPhDYear('fr')} année à TU Delft aux Pays-bas, où j'étudie l'ingénierie du trafic et l'informatique
                         en mettant l'accent sur la théorie du contrôle et l'apprentissage continuel. J'ai obtenu un diplôme MSci Computer Science de
                         première classe à l'Université d'Exeter en juin 2022 où j'ai gagné beaucoup d'expérience dans plusieurs domaines d'informatique
                         différents, y compris le calcul évolutif, l'intelligence artificielle et le machine learning, cependant, mes principaux intérêts
@@ -89,7 +90,7 @@ webText = {
                         la priorité à la capacité des frontières de représenter le plus précisément et équitablement l'électorat avec une nouvelle métrique,
                         le ‘Seats-Votes difference,' qui était conçue pour fonctionner dans les systèmes parlementaires. Dans l'ensemble, le projet était
                         un vrai succès et le papier résultant sera publié dans le cadre de "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood
-                        2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre.
+                        2022: The 7<sup>th</sup> Workshop on Data Science for Social Good</a>" qui a eu lieu à Grenoble en septembre 2022.
                     </p><p class="content-txt">
                         Les codes source et les rapports pour ces projets, ainsi que mes autres projets, sont accessibles
                         <a href="https://github.com/calluume">ici</a> sur GitHub.
@@ -302,8 +303,10 @@ webText = {
         },
         "publication1": {
             "eng": `<h1>A Reinforcement Learning Algorithm for Fair Electoral Redistricting in Parliamentary Systems</h1>
-                    <p>Callum Evans, Hugo Barbosa 'A Reinforcement Learning Algorithm for Fair Electoral Redistricting in Parliamentary Systems' in <i>SoGood 2022: The 7th Workshop on Data Science for Social Good</i>.
-                    Grenoble, France: September 23<sup>rd</sup> 2022</p>`
+                    <ul>Evans, Callum, and Hugo Barbosa. "A Reinforcement Learning Algorithm for Fair Electoral Redistricting in Parliamentary Systems."
+                    In <i>Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble,
+                    France, September 19–23, 2022, Proceedings, Part I,</i> pp. 167-180. Cham: Springer Nature Switzerland, 2023.
+                    <a href="https://doi.org/10.1007/978-3-031-23618-1_11">https://doi.org/10.1007/978-3-031-23618-1_11</a></ul>`
         }
     }
 }
@@ -333,7 +336,7 @@ function loadText(currentPage, language) {
     if (document.getElementById('menu-table-tr')) {
         for (var lang in languages) {
             if (lang != localStorage.getItem("language")) {
-                document.getElementById('menu-table-tr').innerHTML += `<td class="menu-link"><a href="javascript:changeLanguage('${lang}')">${languages[lang]["name"]}</a></td>`
+                document.getElementById('footer-div').innerHTML += `<p style="padding:10px 0 10px;">Site language: <a href="javascript:changeLanguage('${lang}')">${languages[lang]["name"]}</a></p>`
             }
         }
     }
@@ -372,4 +375,18 @@ function displayLastUpdate(language) {
     }).catch(function() {
         console.log(`Could not fetch last updated.`)
     })
+}
+
+function getPhDYear(lang) {
+    // absolutely no reason to do this
+    currDate = new Date()
+    startDate = new Date('January 15, 2023')
+    year = currDate.getFullYear() - startDate.getFullYear()
+    years = {"eng": ["1<sup>st</sup>", "2<sup>nd</sup>", "3<sup>rd</sup>", "4<sup>th</sup>"],
+             "fr":  ["première", "deuxième", "troisième", "quatrième"]}
+    if (year <= 3) {
+        return years[lang][year]
+    } else {
+        return `${year+1}<sup>th</sup>`
+    }
 }

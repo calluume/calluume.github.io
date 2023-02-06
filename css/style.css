@@ -49,9 +49,9 @@ body {
     .homescreen-title {
         font-size: 2.5em !important;
         bottom: 10% !important;
-        margin: 0 20px !important;
+        margin: 0px !important;
         text-align: center !important;
-        width: auto !important;
+        width: 100% !important;
     }
 
     .menu-table {
@@ -115,6 +115,9 @@ body {
         width: 90% !important;
     }
 
+    p, td, ul {
+        text-align: justify;
+    }
 }
 
 .show600 {
@@ -540,8 +543,15 @@ textarea {
     text-align: center;
 }
 
+#publications-homescreen {
+    height: 75%;
+}
+
+#projects-homescreen {
+    height: 75%;
+}
+
 .publications-parent {
-    margin-top: 60px !important;
     margin-bottom: 40px !important;
 }
 
@@ -554,7 +564,7 @@ textarea {
     margin: 0;
 }
 
-.publication-tile p {
+.publication-tile ul {
     font-size: 1em;
-    margin: 0 0 20px 5%;
+    margin: 0 0 20px 0;
 }
