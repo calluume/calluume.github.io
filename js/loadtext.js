@@ -5,7 +5,7 @@ languages = {
 
 webText = {
     "all-pages": {
-        "menu-home": {"eng": "About Me", "fr": "Page d'acceuil"},
+        "menu-home": {"eng": "Home", "fr": "Page d'acceuil"},
         "menu-projects": { "eng": "Projects", "fr": "Projets" },
         "menu-publications": { "eng": "Publications", "fr": "Publications" },
         "menu-contact": { "eng": "Contact", "fr": "Contacter" },

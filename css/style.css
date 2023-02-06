@@ -49,9 +49,9 @@ body {
     .homescreen-title {
         font-size: 2.5em !important;
         bottom: 10% !important;
-        margin: 0px !important;
+        margin: 0px 10% !important;
         text-align: center !important;
-        width: 100% !important;
+        width: 80% !important;
     }
 
     .menu-table {
