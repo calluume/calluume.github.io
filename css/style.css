@@ -34,11 +34,16 @@
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    max-width: 1300px;
+    margin: 0 auto;
     font-family: 'Newsreader', serif;
     background-color: var(--main-bg);
     color: var(--main-accent);
     line-height: 1.4;
+}
+
+main {
+    min-height: 90vh;
 }
 
 @media (max-width: 600px) {
@@ -150,7 +155,7 @@ a {
 }
 
 .homescreen-div {
-    height: 70%;
+    height: 50%;
     position: relative;
 }
 
@@ -297,8 +302,12 @@ a:hover {
     width: 70%;
 }
 
+#projects-description p {
+    font-size: 1.3em;
+}
+
 .project-descr {
-    font-size: 14pt;
+    font-size: 1.3em;
     margin-bottom: 40px;
     font-weight: 300;
 }
@@ -420,6 +429,7 @@ a:hover {
     display: none;
     position: fixed;
     width: 100%;
+    max-width: 1300px;
     height: 100%;
     top: 0;
     background: var(--main-bg);
