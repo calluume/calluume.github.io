@@ -57,8 +57,9 @@ webText = {
         "subheading": { "eng": "PhD Student", "fr": "Étudiant en Doctorat", "nl": "Promovendus in de informatica" },
         "section1": {
             "eng": `<p class="content-txt">
-                        I am currently a ${getPhDYear('eng')} year PhD student at TU Delft in the Netherlands, studying traffic management and Computer Science with
-                        a focus on control theory and continual learning models. I graduated with a first-class MSci Computer Science degree at the
+                        I am currently a ${getPhDYear('eng')} year PhD student at TU Delft in the Netherlands, studying traffic management with reinforcement learning.
+                        My project involves designing reinforcement learning-based integrated traffic control systems, combining measures such as ramp metering,
+                        variable speed limits and dynamic route guidance. Previously, I graduated with a first-class MSci Computer Science degree at the
                         University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
                         artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
                         urban, environmental and social sciences.
@@ -100,7 +101,7 @@ webText = {
             "eng": `<p class="content-txt">
                         Outside of study, I also love surfing and sailing which I have been doing at my local reservoir since 2010, even achieving my
                         RYA instructor qualifications in 2015. I also really enjoy learning languages, particularly Dutch which I started to learn
-                        before moving to Delft and French which I was able to pass the DALF C1 exam for in December 2021.
+                        before moving to Delft and French, for which I was able to pass the DALF C1 exam in December 2021.
                     </p>`,
             "fr":  `<p class="content-txt">
                         À part mes études, j'aime bien faire du surf et la voile que je fais à mon réservoir local depuis 2010, même obtenant mes diplômes
@@ -202,6 +203,23 @@ webText = {
                         alors que je développe plus de projets aux côtés de mes études, mais il y a un contour de quelques-un de mes
                         projets plus récents au-dessous.
                     </p>`
+        },
+        "tudsumotitle": { "eng": "TUD-SUMO", "fr": "TUD-SUMO"},
+        "tudsumobody": {
+            "eng": `<p class="project-descr">
+                        As part of my PhD at TU Delft, I developed TUD-SUMO, a research-oriented SUMO wrapper that aims to act as a simplified
+                        framework for microscopic traffic simulation. It provides an easy and standardised way to simulate a wide range of
+                        scenarios whilst facilitating complex interactions. Resulting data can then be saved, summarised and visualised
+                        with minimal code.
+                    </p>
+                    </p><p class="project-descr">
+                        The framework is available on <a href="https://pypi.org/project/tud-sumo/">PyPI</a> and <a href="https://github.com/tud-sumo/tud_sumo">GitHub</a>.
+                        Full documentation and examples can be found at: <a href="https://tud-sumo.github.io/docs/">tud-sumo.github.io/docs/</a>.
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 200px;"><div class="resizeable-inner-div" id="tudsumo"></div></div>`,
+            "fr":  `<p class="project-descr">
+                    </p>
+                    <div class="resizeable-outer-div project-img" style="height: 200px;"><div class="resizeable-inner-div" id="tudsumo"></div></div>`
         },
         "redistrictertitle": { "eng": "The UK Redistricter Project", "fr": "The UK Redistricter Project"},
         "redistricterbody": {
@@ -336,7 +354,7 @@ function loadText(currentPage, language) {
     if (document.getElementById('menu-table-tr')) {
         for (var lang in languages) {
             if (lang != localStorage.getItem("language")) {
-                document.getElementById('footer-div').innerHTML += `<p style="padding:10px 0 10px;">Site language: <a href="javascript:changeLanguage('${lang}')">${languages[lang]["name"]}</a></p>`
+                //document.getElementById('footer-div').innerHTML += `<p style="padding:10px 0 10px;">Site language: <a href="javascript:changeLanguage('${lang}')">${languages[lang]["name"]}</a></p>`
             }
         }
     }

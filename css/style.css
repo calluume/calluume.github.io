@@ -311,6 +311,13 @@ a:hover {
     margin-bottom: 40px;
     font-weight: 300;
 }
+#tudsumo {
+    /* TUD-SUMO */
+    position: relative;
+    background-repeat: none;
+    background-size: auto 100%;
+    background-image: url('https://github.com/tud-sumo/docs/blob/main/docs/img/rm_example.gif?raw=true');
+}
 
 #redistricter {
     /* Redistricter */
