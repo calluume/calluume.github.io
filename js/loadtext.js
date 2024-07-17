@@ -58,8 +58,8 @@ webText = {
         "section1": {
             "eng": `<p class="content-txt">
                         I am currently a ${getPhDYear('eng')} year PhD student at TU Delft in the Netherlands, studying traffic management with reinforcement learning.
-                        My project involves designing reinforcement learning-based integrated traffic control systems, combining measures such as ramp metering,
-                        variable speed limits and dynamic route guidance. Previously, I graduated with a first-class MSci Computer Science degree at the
+                        My project involves designing reinforcement learning-based integrated traffic control systems for large-scale motorway networks,
+                        combining measures such as ramp metering, variable speed limits and dynamic route guidance. Previously, I graduated with a first-class MSci Computer Science degree at the
                         University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
                         artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
                         urban, environmental and social sciences.
