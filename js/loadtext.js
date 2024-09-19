@@ -59,9 +59,9 @@ webText = {
             "eng": `<p class="content-txt">
                         I am currently a ${getPhDYear('eng')} year PhD student at TU Delft in the Netherlands, studying traffic management with reinforcement learning.
                         My project involves designing reinforcement learning-based integrated traffic control systems for large-scale motorway networks,
-                        combining measures such as ramp metering, variable speed limits and dynamic route guidance. Previously, I graduated with a first-class MSci Computer Science degree at the
-                        University of Exeter in June 2022 where I worked in many different fields including data science, evolutionary computation,
-                        artificial intelligence and machine learning, however, my main research interests surround Computer Science applications within
+                        combining measures such as ramp metering, variable speed limits and dynamic route guidance. In 2022, I graduated with a first-class MSci Computer Science degree at the
+                        University of Exeter where I worked in many different fields including data science, evolutionary computation,
+                        artificial intelligence and machine learning. However, my main research interests surround Computer Science applications within
                         urban, environmental and social sciences.
                     </p>`,
             "fr":  `<p class="content-txt">
@@ -79,7 +79,7 @@ webText = {
                         like climate change. Then, for my master’s dissertation, I developed a new reinforcement learning algorithm for electoral redistricting,
                         applied to the UK. The algorithm aimed to optimise the parliamentary constituency boundaries of the UK, prioritising their ability
                         to represent the electorate through a new measure of electoral fairness, the "Seats-Votes difference," which was designed to work
-                        in parliamentary systems. The UK redistricter project was ultimately very successful, with the resulting paper to be published as
+                        in parliamentary systems. The UK redistricter project was ultimately successful, with the resulting paper to be published as
                         part of the proceedings of "<a href="https://sites.google.com/view/ecmlpkddsogood2022/">SoGood 2022: The 7<sup>th</sup> Workshop on
                         Data Science for Social Good</a>," which took place in Grenoble in September 2022. The source code and reports for these projects, as well as others done alongside my degree, are available
                         <a href="https://github.com/calluume">here</a>, on GitHub.
@@ -167,18 +167,17 @@ webText = {
                     </td>`
         },
         "sailing-description": {
-            "eng": `<td class="experience-title hide600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - Present</i></td>
+            "eng": `<td class="experience-title hide600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - 2022</i></td>
                     <td class="experience-descr">
-                        <span class="show600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - Present</i><br><br></span>
-                        Outside of my interests within Computer Science, I am also a fully qualified sailing instructor and have been helping to
-                        run training at my local reservoir, and competing in national competitions, for many years. I also became the club’s junior
+                        <span class="show600"><b>Sailing Instructor</b><br><i>Toddbrook Sailing Club<br>2015 - 2022</i><br><br></span>
+                        Outside of my interests within Computer Science, I am also a fully qualified sailing instructor and helped to
+                        run training at my local reservoir and compete in national competitions for many years. I also became the club’s junior
                         coordinator for some time, helping to organise extra social events for younger members as well as helping with some of
-                        the administrative elements of training. This has all greatly helped my ability to adapt and plan under pressure, and I
-                        continue to take part in the club when I am home from university.
+                        the administrative elements of training.
                     </td>`,
-            "fr":  `<td class="experience-title hide600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 jusqu’à présent</i></td>
+            "fr":  `<td class="experience-title hide600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 à 2022</i></td>
                     <td class="experience-descr">
-                        <span class="show600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 jusqu’à présent</i><br><br></span>
+                        <span class="show600"><b>Moniteur de Voile</b><br><i>Toddbrook Sailing Club<br>2015 à 2022</i><br><br></span>
                         En dehors de mes intérêts en informatique, je suis aussi moniteur de voile diplômé où j'aide à diriger la formation junior dans mon lac artificiel
                         local et je participe à des compétitions nationales depuis des années. J'étais aussi le ‘junior coordinator’ du club, où j'aidais à organiser
                         des événements sociaux supplémentaires pour les plus jeunes membres et avec les éléments administratifs de la formation. Tout ceci a vraiment
